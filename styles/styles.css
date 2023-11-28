@@ -1,9 +1,348 @@
 /* ===== YOUR CSS GOES HERE ===== */
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
 
-body {
-    background: magenta;
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-p {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #FAF7F2;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+header .homepage {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 2em;
+    background-image: url(../images/wine_noise.jpg);
+    background-size: cover;
+}
+
+#quiz_homepage {
+    background-image: url(../images/quiz_bg.jpg);
+}
+
+header .container {
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    margin: 24px;
+    max-width: 640px;
+    padding: 10px; 
+    box-sizing: border-box; 
+    background-color: rgb(250,247,242,0.7);
+}
+
+#scroll {
+    color: #6B1515;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    bottom: 0px; 
+    text-align: center; 
+}
+
+#scroll p{
+    margin: 0;
+}
+
+#scroll img {
+    width: 30px;
+    height: 100%;
+    margin-top: 12px;
+}
+
+nav {
+    max-width: 1440px;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #6B1515;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5em;
+}
+
+nav>a {
+    font-family: 'Oleo Script', cursive;
+    color: #FAF7F2;
+    text-decoration: none;
+    font-weight: bold;
     font-size: 2em;
+}
+  
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    list-style: none;
+    background-color: #6B1515;
+    padding: 0 1.5em;
+}
+
+nav ul a {
+    color: #FAF7F2;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25em;
+    padding-left: 2.25em;
+}
+  
+nav a:hover {
+    text-decoration: underline;
+}
+  
+.overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 1000;
+}
+
+.overlay.visible {
+    display: block;
+}
+
+.menu-icon {
+    /*position: absolute; 
+    top: 830px; 
+    left: 22px;
+    margin-top: 0; 
+    margin-left: 0; */
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+.menu-icon img {
+    width: 40px; 
+    height: auto; 
+}
+
+.menu-container {
+    position: relative;
+}
+
+.menu-card {
+    display: none;
+    position: absolute; 
+    z-index: 1001; 
+    top: 960px; 
+    left: 96px;
+    background-color: #FAF7F2;
+    color: black;
+  }
+
+.menu-card.visible {
+    display: block;
+}
+
+.wine-card {
+    display: none;
+}
+
+.wine-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    gap: 16px; 
+    margin: 0 2em;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    margin-top: 0.75em;
+}
+
+.wine-container {
+    width: 360px; 
+    height: 710px;
+    position: relative;
+    backface-visibility: hidden;
+    z-index: 2;
+}
+  
+.wine-container img {
+    width: 100%;
+    display: block;
+}
+  
+.wine-text {
+    position: absolute;
+    color: black; 
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+  
+.wine-text h2 {
+    font-family: 'Oleo Script', cursive;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+  
+.wine-text p {
+    margin-top: 0;
+}
+
+.wine-info {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; 
+    transform: rotateY(180deg);
+    z-index: 1; 
+    background-color: #F9F1E3;
+}
+
+.wine-info .wine-text {
+    background-color: #AE2121;
+    color: #FAF7F2;
+}
+  
+.flipped .wine-container {
+    transform: rotateY(-180deg);
+}
+  
+.flipped .wine-info {
+    transform: rotateY(0deg);
+}
+
+.pagination {
+    text-align: center; 
+    margin-top: 5.25em;
+    margin-bottom: 7em;
+    font-size: 20px;
+}
+
+.pagination button {
+    background: none;
+    border: none;
+    font-size: 24px;
+}
+
+.pagination button:hover {
+    text-decoration: underline;
+}
+
+/*.pagination button:visited {
+    text-decoration: underline;
+}*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center; 
+    height: 400px; 
+    background-color: #6B1515;
+    color: #FAF7F2; 
+}
+  
+.footer-content p {
+    margin: 0em 7em 4.75em 7em;
+}
+  
+  
+button#startQuizBtn {
+    background-color: #FAF7F2;
+    color: #6B1515;
+    border: none;
+    height: 44px;
+    width: 162px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.quiz-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.quiz-question {
+    display: none;
+}
+
+.quiz-question {
+    display: block;
+    background-color: #F9F1E3;
+    padding: 20px;
+    width: 100%;
+    max-width: 1080px;
+    max-height: 556px;
+    margin: 140px 24px 24px 24px;
+    padding: 64px 48px;
+}
+
+.quiz-question span {
+    font-family: 'Oleo Script', cursive;
+    font-size: 36px;
+}
+
+.quiz-question p {
+    font-size: 18px;
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.option {
+    font-size: 18px;
+    display: block;
+    background: none;
+    padding: 12px 0;
+    cursor: pointer;
+    border: none;
+}
+
+.option:hover {
+    text-decoration: underline;
 }
