@@ -31,56 +31,76 @@
         <div class="quiz-question">
           <p><span>Q1:</span>&nbsp With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
           <div class="options">
-              <button class="option" onclick="selectOption(this, 'A')">A. Cabernet Sauvignon</button>
-              <button class="option" onclick="selectOption(this, 'B')">B. Cabernet Franc</button>
-              <button class="option" onclick="selectOption(this, 'C')">C. Riesling</button>
-              <button class="option" onclick="selectOption(this, 'D')">D. Pinot Gris</button>
+              <button class="option" onclick="selectOption(this, 'A', 'question1')">A. Cabernet Sauvignon</button>
+              <button class="option" onclick="selectOption(this, 'B', 'question1')">B. Cabernet Franc</button>
+              <button class="option" onclick="selectOption(this, 'C', 'question1')">C. Riesling</button>
+              <button class="option" onclick="selectOption(this, 'D', 'question1')">D. Pinot Gris</button>
           </div>
         </div>
+        <div id="feedback-question1" class="feedback_card" style="display:none;">
+          <p>Incorrect. Please try again.</p>
+        </div>
+        <div id="overlayQuiz-question1" class="overlay" onclick="closeFeedback('question1')" style="display:none;"></div>
       </div>
       <div class="quiz-container" id="question2" style="display: none;">
         <div class="quiz-question">
           <p><span>Q2:</span>&nbsp With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
           <div class="options">
-              <button class="option">A. </button>
-              <button class="option">B. Cabernet Franc</button>
-              <button class="option">C. Riesling</button>
-              <button class="option">D. Pinot Gris</button>
+              <button class="option" onclick="selectOption(this, 'A', 'question2')">A. </button>
+              <button class="option" onclick="selectOption(this, 'B', 'question2')">B. Cabernet Franc</button>
+              <button class="option" onclick="selectOption(this, 'C', 'question2')">C. Riesling</button>
+              <button class="option" onclick="selectOption(this, 'D', 'question2')">D. Pinot Gris</button>
           </div>
         </div>
+        <div id="feedback-question2" class="feedback_card" style="display:none;">
+          <p>Incorrect. Please try again.</p>
+        </div>
+        <div id="overlayQuiz-question2" class="overlay" onclick="closeFeedback('question2')" style="display:none;"></div>
       </div>
       <div class="quiz-container" id="question3" style="display: none;">
         <div class="quiz-question">
           <p><span>Q3:</span>&nbsp With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
           <div class="options">
-              <button class="option">A. </button>
-              <button class="option">B. Cabernet Franc</button>
-              <button class="option">C. Riesling</button>
-              <button class="option">D. Pinot Gris</button>
+              <button class="option" onclick="selectOption(this, 'A', 'question3')">A. </button>
+              <button class="option" onclick="selectOption(this, 'B', 'question3')">B. Cabernet Franc</button>
+              <button class="option" onclick="selectOption(this, 'C', 'question3')">C. Riesling</button>
+              <button class="option" onclick="selectOption(this, 'D', 'question3')">D. Pinot Gris</button>
           </div>
         </div>
+        <div id="feedback-question3" class="feedback_card" style="display:none;">
+          <p>Incorrect. Please try again.</p>
+        </div>
+        <div id="overlayQuiz-question3" class="overlay" onclick="closeFeedback('question3')" style="display:none;"></div>
       </div>
       <div class="quiz-container" id="question4" style="display: none;">
         <div class="quiz-question">
           <p><span>Q4:</span>&nbsp With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
           <div class="options">
-              <button class="option">A. </button>
-              <button class="option">B. Cabernet Franc</button>
-              <button class="option">C. Riesling</button>
-              <button class="option">D. Pinot Gris</button>
+              <button class="option" onclick="selectOption(this, 'A', 'question4')">A. </button>
+              <button class="option" onclick="selectOption(this, 'B', 'question4')">B. Cabernet Franc</button>
+              <button class="option" onclick="selectOption(this, 'C', 'question4')">C. Riesling</button>
+              <button class="option" onclick="selectOption(this, 'D', 'question4')">D. Pinot Gris</button>
           </div>
         </div>
+        <div id="feedback-question4" class="feedback_card" style="display:none;">
+          <p>Incorrect. Please try again.</p>
+        </div>
+        <div id="overlayQuiz-question4" class="overlay" onclick="closeFeedback('question4')" style="display:none;"></div>
       </div>
       <div class="quiz-container" id="question5" style="display: none;">
         <div class="quiz-question">
           <p><span>Q5:</span>&nbsp With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
           <div class="options">
-              <button class="option">A. </button>
-              <button class="option">B. Cabernet Franc</button>
-              <button class="option">C. Riesling</button>
-              <button class="option">D. Pinot Gris</button>
+              <button class="option" onclick="selectOption(this, 'A', 'question5')">A. </button>
+              <button class="option" onclick="selectOption(this, 'B', 'question5')">B. Cabernet Franc</button>
+              <button class="option" onclick="selectOption(this, 'C', 'question5')">C. Riesling</button>
+              <button class="option" onclick="selectOption(this, 'D', 'question5')">D. Pinot Gris</button>
           </div>
         </div>
+        <div id="feedback-question5" class="feedback_card" style="display:none;">
+          <p>Incorrect. Please try again.</p>
+        </div>
+        <div id="overlayQuiz-question5" class="overlay" onclick="closeFeedback('question5')" style="display:none;"></div>
       </div>
   
       <div class="pagination">
@@ -90,6 +110,10 @@
         <button id="button4" onclick="showQuestion('question4')">4</button>
         <button id="button5" onclick="showQuestion('question5')">5</button>
       </div>
+      
+      <button id="submitAnswers" onclick="checkAnswersAndOpenPage()">Submit</button>
+
+
     </main>
       
     <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
