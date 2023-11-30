@@ -37,8 +37,113 @@
               <button class="option" onclick="selectOption(this, 'D', 'question1')">D. Pinot Gris</button>
           </div>
         </div>
-        <div id="feedback-question1" class="feedback_card" style="display:none;">
-          <p>Incorrect. Please try again.</p>
+        <div id="feedback-question1" class="red_feedback_card" style="display:none;">   
+          <!-- wine info -->
+          <div class="wine-intro">
+            <div class="rating-container">
+              <div class="wine-bottle">
+                <img src="./images/Cabernet-Sauvignon.png" alt="Bottle of Cabernet Sauvignon wine">
+              </div>
+              <div class="ratings">
+                <div class="rating">
+                  <div class="rating-bar-background"></div>
+                  <div class="rating-bar-foreground" style="width: 44px;"></div> <!-- Sweetness -->
+                  <span>Sweetness</span>
+                </div>
+                <div class="rating">
+                  <div class="rating-bar-background"></div>
+                  <div class="rating-bar-foreground" style="width: 120px;"></div> <!-- Tannin -->
+                  <span>Tannin</span>
+                </div>
+                <div class="rating">
+                  <div class="rating-bar-background"></div>
+                  <div class="rating-bar-foreground" style="width: 70px;"></div> <!-- Acidity -->
+                  <span>Acidity</span>
+                </div>
+                <div class="rating">
+                  <div class="rating-bar-background"></div>
+                  <div class="rating-bar-foreground" style="width: 102px;"></div> <!-- Alcohol Content -->
+                  <span>Alcohol Content</span>
+                </div>
+              </div>
+            </div>
+            <div class="feature-container">
+              <h3>Tastes</h3>
+              <div class="features">
+                <div class="feature">
+                  <img src="./images/cedar.png" alt="Cedar">
+                  <p>Cedar</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/BlackCurrant.png" alt="Black Currant">
+                  <p>Black Currant</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/BlackCherry.png" alt="Black Cherry">
+                  <p>Black Cherry</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/spices.png" alt="Baking Spices">
+                  <p>Baking Spices</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-container" id="origin">
+              <h3>Origin</h3>
+              <div class="features">
+                <div class="feature">
+                  <img src="./images/france.png" alt="France Flag">
+                  <p>France</p>
+                  <p>Burgundy</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/new-zealand.png" alt="New Zealand Flag">
+                  <p>New Zealand</p>
+                  <p>Central Otago</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/australia.png" alt="Australia Flag">
+                  <p>Australia</p>
+                  <p>Yarra Valley</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/usa.png" alt="USA Flag">
+                  <p>United States</p>
+                  <p>Oregon</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-container">
+              <h3>Food Pairing</h3>
+              <div class="features">
+                <div class="feature">
+                  <img src="./images/lamb.png" alt="Lamb">
+                  <p>Lamb</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/beef.png" alt="Beef">
+                  <p>Beef</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/smoked.png" alt="Smoked Meats">
+                  <p>Smoked Meats</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/cheeses.png" alt="Cheeses">
+                  <p>Cheeses</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-container">
+              <div class="description">
+                <p>Cabernet Sauvignon is a full-bodied red grape first heavily planted in the Bordeaux region. Wines are full-bodied with bold tannins and a long persistent finish driven mostly by the higher levels of alcohol and tannin that often accompany these wines.</p>
+              </div>
+            </div>
+          </div>
+          <div class="wine-text">
+            <h2>Cabernet Sauvignon</h2>
+            <p>the most popular wine variety in the world</p>
+          </div>
         </div>
         <div id="overlayQuiz-question1" class="overlay" onclick="closeFeedback('question1')" style="display:none;"></div>
       </div>
@@ -46,13 +151,13 @@
         <div class="quiz-question">
           <p><span>Q2:</span>&nbsp With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
           <div class="options">
-              <button class="option" onclick="selectOption(this, 'A', 'question2')">A. </button>
+              <button class="option" onclick="selectOption(this, 'A', 'question2')">A. Cabernet Sauvignon </button>
               <button class="option" onclick="selectOption(this, 'B', 'question2')">B. Cabernet Franc</button>
               <button class="option" onclick="selectOption(this, 'C', 'question2')">C. Riesling</button>
               <button class="option" onclick="selectOption(this, 'D', 'question2')">D. Pinot Gris</button>
           </div>
         </div>
-        <div id="feedback-question2" class="feedback_card" style="display:none;">
+        <div id="feedback-question2" class="red_feedback_card" style="display:none;">
           <p>Incorrect. Please try again.</p>
         </div>
         <div id="overlayQuiz-question2" class="overlay" onclick="closeFeedback('question2')" style="display:none;"></div>
@@ -61,13 +166,13 @@
         <div class="quiz-question">
           <p><span>Q3:</span>&nbsp With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
           <div class="options">
-              <button class="option" onclick="selectOption(this, 'A', 'question3')">A. </button>
+              <button class="option" onclick="selectOption(this, 'A', 'question3')">A. Cabernet Sauvignon</button>
               <button class="option" onclick="selectOption(this, 'B', 'question3')">B. Cabernet Franc</button>
               <button class="option" onclick="selectOption(this, 'C', 'question3')">C. Riesling</button>
               <button class="option" onclick="selectOption(this, 'D', 'question3')">D. Pinot Gris</button>
           </div>
         </div>
-        <div id="feedback-question3" class="feedback_card" style="display:none;">
+        <div id="feedback-question3" class="red_feedback_card" style="display:none;">
           <p>Incorrect. Please try again.</p>
         </div>
         <div id="overlayQuiz-question3" class="overlay" onclick="closeFeedback('question3')" style="display:none;"></div>
@@ -76,13 +181,13 @@
         <div class="quiz-question">
           <p><span>Q4:</span>&nbsp With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
           <div class="options">
-              <button class="option" onclick="selectOption(this, 'A', 'question4')">A. </button>
+              <button class="option" onclick="selectOption(this, 'A', 'question4')">A. Cabernet Sauvignon</button>
               <button class="option" onclick="selectOption(this, 'B', 'question4')">B. Cabernet Franc</button>
               <button class="option" onclick="selectOption(this, 'C', 'question4')">C. Riesling</button>
               <button class="option" onclick="selectOption(this, 'D', 'question4')">D. Pinot Gris</button>
           </div>
         </div>
-        <div id="feedback-question4" class="feedback_card" style="display:none;">
+        <div id="feedback-question4" class="red_feedback_card" style="display:none;">
           <p>Incorrect. Please try again.</p>
         </div>
         <div id="overlayQuiz-question4" class="overlay" onclick="closeFeedback('question4')" style="display:none;"></div>
@@ -91,13 +196,13 @@
         <div class="quiz-question">
           <p><span>Q5:</span>&nbsp With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
           <div class="options">
-              <button class="option" onclick="selectOption(this, 'A', 'question5')">A. </button>
+              <button class="option" onclick="selectOption(this, 'A', 'question5')">A. Cabernet Sauvignon</button>
               <button class="option" onclick="selectOption(this, 'B', 'question5')">B. Cabernet Franc</button>
               <button class="option" onclick="selectOption(this, 'C', 'question5')">C. Riesling</button>
               <button class="option" onclick="selectOption(this, 'D', 'question5')">D. Pinot Gris</button>
           </div>
         </div>
-        <div id="feedback-question5" class="feedback_card" style="display:none;">
+        <div id="feedback-question5" class="red_feedback_card" style="display:none;">
           <p>Incorrect. Please try again.</p>
         </div>
         <div id="overlayQuiz-question5" class="overlay" onclick="closeFeedback('question5')" style="display:none;"></div>
