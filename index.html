@@ -50,32 +50,32 @@
         <div id="menu-card" class="menu-card">
           <ul>
             <li><a href="#red-wines">Red Wine</a></li>
-            <li><a href="#red-Cabernet-Sauvignon">Cabernet Sauvignon</a></li>
-            <li><a href="#red-Pinot-Noir">Pinot Noir</a></li>
-            <li><a href="#red-Shiraz">Shiraz (Syrah)</a></li>
-            <li><a href="#red-Merlot">Merlot</a></li>
-            <li><a href="#red-Cabernet-Franc">Cabernet Franc</a></li>
-            <li><a href="#red-Grenache">Grenache</a></li>
+            <li><a href="#red-cabernet-sauvignon">Cabernet Sauvignon</a></li>
+            <li><a href="#red-pinot-noir">Pinot Noir</a></li>
+            <li><a href="#red-shiraz">Shiraz (Syrah)</a></li>
+            <li><a href="#red-merlot">Merlot</a></li>
+            <li><a href="#red-cabernet-franc">Cabernet Franc</a></li>
+            <li><a href="#red-grenache">Grenache</a></li>
           </ul>
           <ul>
             <li><a href="#white-wines">White Wine</a></li>
-            <li><a href="#white-Sauvignon-Blanc">Sauvignon Blanc</a></li>
-            <li><a href="#white-Pinot-Gris">Pinot Gris</a></li>
-            <li><a href="#white-Chardonnay">Chardonnay</a></li>
-            <li><a href="#white-Riesling">Riesling</a></li>
-            <li><a href="#white-Gewurztraminer">Gewurztraminer</a></li>
-            <li><a href="#white-Moscato">Moscato</a></li>
+            <li><a href="#white-sauvignon-blanc">Sauvignon Blanc</a></li>
+            <li><a href="#white-pinot-gris">Pinot Gris</a></li>
+            <li><a href="#white-chardonnay">Chardonnay</a></li>
+            <li><a href="#white-riesling">Riesling</a></li>
+            <li><a href="#white-gewurztraminer">Gewurztraminer</a></li>
+            <li><a href="#white-moscato">Moscato</a></li>
           </ul>
         </div>
       </div>
       <div id="wine-intro"></div>
       <div class="wine-card" id="red-wines">
-        <div class="card" onclick="flipCard(this)" id="red-Cabernet-Sauvignon">
+        <div class="card" id="red-cabernet-sauvignon">
           <div class="wine-container">
-            <img src="./images/Cabernet-Sauvignon.png" alt="Bottle of Cabernet Sauvignon wine">
+            <img src="./images/cabernet-sauvignon.png" alt="Bottle of Cabernet Sauvignon wine">
             <div class="wine-text">
               <h2>Cabernet Sauvignon</h2>
-              <p>the most popular wine variety in the world</p>
+              <p>The most popular wine variety in the world</p>
             </div>
           </div>
           <div class="wine-info">
@@ -83,27 +83,27 @@
             <div class="wine-intro">
               <div class="rating-container">
                 <div class="wine-bottle">
-                  <img src="./images/Cabernet-Sauvignon.png" alt="Bottle of Cabernet Sauvignon wine">
+                  <img src="./images/cabernet-sauvignon.png" alt="Bottle of Cabernet Sauvignon wine">
                 </div>
                 <div class="ratings">
                   <div class="rating">
-                    <div class="rating-bar-background"></div>
-                    <div class="rating-bar-foreground" style="width: 44px;"></div> <!-- Sweetness -->
+                    <div class="rating-bar-background-r"></div>
+                    <div class="rating-bar-foreground-r" id="cabernet-sauvignon-sweetness"></div>
                     <span>Sweetness</span>
                   </div>
                   <div class="rating">
-                    <div class="rating-bar-background"></div>
-                    <div class="rating-bar-foreground" style="width: 120px;"></div> <!-- Tannin -->
+                    <div class="rating-bar-background-r"></div>
+                    <div class="rating-bar-foreground-r" id="cabernet-sauvignon-tannin"></div>
                     <span>Tannin</span>
                   </div>
                   <div class="rating">
-                    <div class="rating-bar-background"></div>
-                    <div class="rating-bar-foreground" style="width: 70px;"></div> <!-- Acidity -->
+                    <div class="rating-bar-background-r"></div>
+                    <div class="rating-bar-foreground-r" id="cabernet-sauvignon-acidity"></div>
                     <span>Acidity</span>
                   </div>
                   <div class="rating">
-                    <div class="rating-bar-background"></div>
-                    <div class="rating-bar-foreground" style="width: 102px;"></div> <!-- Alcohol Content -->
+                    <div class="rating-bar-background-r"></div>
+                    <div class="rating-bar-foreground-r" id="cabernet-sauvignon-alcohol"></div>
                     <span>Alcohol Content</span>
                   </div>
                 </div>
@@ -116,11 +116,11 @@
                     <p>Cedar</p>
                   </div>
                   <div class="feature">
-                    <img src="./images/BlackCurrant.png" alt="Black Currant">
+                    <img src="./images/black-currant.png" alt="Black Currant">
                     <p>Black Currant</p>
                   </div>
                   <div class="feature">
-                    <img src="./images/BlackCherry.png" alt="Black Cherry">
+                    <img src="./images/black-cherry.png" alt="Black Cherry">
                     <p>Black Cherry</p>
                   </div>
                   <div class="feature">
@@ -135,22 +135,22 @@
                   <div class="feature">
                     <img src="./images/france.png" alt="France Flag">
                     <p>France</p>
-                    <p>Burgundy</p>
-                  </div>
-                  <div class="feature">
-                    <img src="./images/new-zealand.png" alt="New Zealand Flag">
-                    <p>New Zealand</p>
-                    <p>Central Otago</p>
-                  </div>
-                  <div class="feature">
-                    <img src="./images/australia.png" alt="Australia Flag">
-                    <p>Australia</p>
-                    <p>Yarra Valley</p>
+                    <p>Bordeaux</p>
                   </div>
                   <div class="feature">
                     <img src="./images/usa.png" alt="USA Flag">
                     <p>United States</p>
-                    <p>Oregon</p>
+                    <p>California</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/chile.png" alt="Chile Flag">
+                    <p>Chile</p>
+                    <p>Colchagua</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/argentina.png" alt="Argentina Flag">
+                    <p>Argentina</p>
+                    <p>Mendoza</p>
                   </div>
                 </div>
               </div>
@@ -183,32 +183,130 @@
             </div>
             <div class="wine-text">
               <h2>Cabernet Sauvignon</h2>
-              <p>the most popular wine variety in the world</p>
+              <p>The most popular wine variety in the world</p>
             </div>
           </div>
         </div>
-        <div class="card" onclick="flipCard(this)" id="red-Pinot-Noir">
+        <div class="card" id="red-pinot-noir">
           <div class="wine-container">
-            <img src="./images/Pinot-Noir.png" alt="Bottle of Pinot Noir wine">
+            <img src="./images/pinot-noir.png" alt="Bottle of Pinot Noir wine">
             <div class="wine-text">
               <h2>Pinot Noir</h2>
-              <p>the most popular wine variety in the world</p>
+              <p>Light-bodied wine with cherry and earthy notes</p>
             </div>
           </div>
           <div class="wine-info">
             <!-- wine info -->
             <div class="wine-intro">
-              <p>wine information</p>
+              <div class="rating-container">
+                <div class="wine-bottle">
+                  <img src="./images/pinot-noir.png" alt="Bottle of Pinot Noir wine">
+                </div>
+                <div class="ratings">
+                  <div class="rating">
+                    <div class="rating-bar-background-r"></div>
+                    <div class="rating-bar-foreground-r" id="pinot-noir-sweetness"></div>
+                    <span>Sweetness</span>
+                  </div>
+                  <div class="rating">
+                    <div class="rating-bar-background-r"></div>
+                    <div class="rating-bar-foreground-r" id="pinot-noir-tannin"></div>
+                    <span>Tannin</span>
+                  </div>
+                  <div class="rating">
+                    <div class="rating-bar-background-r"></div>
+                    <div class="rating-bar-foreground-r" id="pinot-noir-acidity"></div>
+                    <span>Acidity</span>
+                  </div>
+                  <div class="rating">
+                    <div class="rating-bar-background-r"></div>
+                    <div class="rating-bar-foreground-r" id="pinot-noir-alcohol"></div>
+                    <span>Alcohol Content</span>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-container">
+                <h3>Tastes</h3>
+                <div class="features">
+                  <div class="feature">
+                    <img src="./images/cherry.png" alt="Cherry">
+                    <p>Cherry</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/raspberry.png" alt="Raspberry">
+                    <p>Raspberry</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/mushroom.png" alt="Mushroom">
+                    <p>Mushroom</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/lilac.png" alt="Lilac">
+                    <p>Lilac</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-container" id="origin">
+                <h3>Origin</h3>
+                <div class="features">
+                  <div class="feature">
+                    <img src="./images/france.png" alt="France Flag">
+                    <p>France</p>
+                    <p>Burgundy</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/new-zealand.png" alt="New Zealand Flag">
+                    <p>New Zealand</p>
+                    <p>Central Otago</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/australia.png" alt="Australia Flag">
+                    <p>Australia</p>
+                    <p>Yarra Valley</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/usa.png" alt="USA Flag">
+                    <p>United States</p>
+                    <p>Oregon</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-container">
+                <h3>Food Pairing</h3>
+                <div class="features">
+                  <div class="feature">
+                    <img src="./images/duck.png" alt="Duck">
+                    <p>Duck</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/chicken.png" alt="Chicken">
+                    <p>Chicken</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/sushi.png" alt="Sushi">
+                    <p>Sushi</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/cheeses.png" alt="Cheeses">
+                    <p>Cheeses</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-container">
+                <div class="description">
+                  <p>Pinot Noir is a dry, light-bodied red that was first widely planted in France. The wines typically have higher acidity and a soft, smooth, low-tannin finish.</p>
+                </div>
+              </div>
             </div>
             <div class="wine-text">
-              <h2>Cabernet Sauvignon</h2>
-              <p>the most popular wine variety in the world</p>
+              <h2>Pinot Noir</h2>
+              <p>Light-bodied wine with cherry and earthy notes</p>
             </div>
           </div>
         </div>
-        <div class="card" onclick="flipCard(this)" id="red-Shiraz">
+        <div class="card" id="red-shiraz">
           <div class="wine-container">
-            <img src="./images/Shiraz.png" alt="Bottle of Shiraz (Syrah) wine">
+            <img src="./images/shiraz.png" alt="Bottle of Shiraz (Syrah) wine">
             <div class="wine-text">
               <h2>Shiraz (Syrah)</h2>
               <p>the most popular wine variety in the world</p>
@@ -225,9 +323,9 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="flipCard(this)" id="red-Merlot">
+        <div class="card" id="red-merlot">
           <div class="wine-container">
-            <img src="./images/Merlot.png" alt="Bottle of Merlot wine">
+            <img src="./images/merlot.png" alt="Bottle of Merlot wine">
             <div class="wine-text">
               <h2>Merlot</h2>
               <p>the most popular wine variety in the world</p>
@@ -244,9 +342,9 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="flipCard(this)" id="red-Cabernet-Franc">
+        <div class="card" id="red-cabernet-franc">
           <div class="wine-container">
-            <img src="./images/Cabernet-Franc.png" alt="Bottle of Cabernet Franc wine">
+            <img src="./images/cabernet-franc.png" alt="Bottle of Cabernet Franc wine">
             <div class="wine-text">
               <h2>Cabernet Franc</h2>
               <p>the most popular wine variety in the world</p>
@@ -263,9 +361,9 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="flipCard(this)" id="red-Grenache">
+        <div class="card" id="red-grenache">
           <div class="wine-container">
-            <img src="./images/Grenache.png" alt="Bottle of Grenache wine">
+            <img src="./images/grenache.png" alt="Bottle of Grenache wine">
             <div class="wine-text">
               <h2>Grenache</h2>
               <p>the most popular wine variety in the world</p>
@@ -284,29 +382,127 @@
         </div>
       </div>
 
-      <div class="wine-card" id="white-wines" style="display: none;">
-        <div class="card" onclick="flipCard(this)" id="white-Sauvignon-Blanc">
+      <div class="wine-card" id="white-wines">
+        <div class="card" id="white-sauvignon-blanc">
           <div class="wine-container">
-            <img src="./images/Sauvignon-Blanc.png" alt="Bottle of Sauvignon Blanc wine">
+            <img src="./images/sauvignon-blanc.png" alt="Bottle of Sauvignon Blanc wine">
             <div class="wine-text">
               <h2>Sauvignon Blanc</h2>
-              <p>crisp, acidic white wine with herbal flavors</p>
+              <p>Crisp, acidic white wine with herbal flavors</p>
             </div>
           </div>
           <div class="wine-info">
             <!-- wine info -->
             <div class="wine-intro">
-              <p>wine information</p>
+              <div class="rating-container">
+                <div class="wine-bottle">
+                  <img src="./images/sauvignon-blanc.png" alt="Bottle of Sauvignon Blanc wine">
+                </div>
+                <div class="ratings">
+                  <div class="rating">
+                    <div class="rating-bar-background-w"></div>
+                    <div class="rating-bar-foreground-w" id="sauvignon-blanc-sweetness"></div>
+                    <span>Sweetness</span>
+                  </div>
+                  <div class="rating">
+                    <div class="rating-bar-background-w"></div>
+                    <div class="rating-bar-foreground-w" id="sauvignon-blanc-body"></div>
+                    <span>Body</span>
+                  </div>
+                  <div class="rating">
+                    <div class="rating-bar-background-w"></div>
+                    <div class="rating-bar-foreground-w" id="sauvignon-blanc-acidity"></div>
+                    <span>Acidity</span>
+                  </div>
+                  <div class="rating">
+                    <div class="rating-bar-background-w"></div>
+                    <div class="rating-bar-foreground-w" id="sauvignon-blanc-alcohol"></div>
+                    <span>Alcohol Content</span>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-container">
+                <h3>Tastes</h3>
+                <div class="features">
+                  <div class="feature">
+                    <img src="./images/grass.png" alt="Grass">
+                    <p>Grass</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/passionfruit.png" alt="Passionfruit">
+                    <p>Passionfruit</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/peach.png" alt="Peach">
+                    <p>Peach</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/grapefruit.png" alt="Grapefruit">
+                    <p>Grapefruit</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-container" id="origin">
+                <h3>Origin</h3>
+                <div class="features">
+                  <div class="feature">
+                    <img src="./images/france.png" alt="France Flag">
+                    <p>France</p>
+                    <p>Bordeaux</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/usa.png" alt="USA Flag">
+                    <p>United States</p>
+                    <p>California</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/chile.png" alt="Chile Flag">
+                    <p>Chile</p>
+                    <p>Colchagua</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/argentina.png" alt="Argentina Flag">
+                    <p>Argentina</p>
+                    <p>Mendoza</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-container">
+                <h3>Food Pairing</h3>
+                <div class="features">
+                  <div class="feature">
+                    <img src="./images/shellfish.png" alt="Shellfish">
+                    <p>Shellfish</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/salad.png" alt="Salad">
+                    <p>Salad</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/sushi.png" alt="Sushi">
+                    <p>Asian Food</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/mexican.png" alt="Taco">
+                    <p>Mexican Food</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-container">
+                <div class="description">
+                  <p>Sauvignon Blanc is a dry white grape first widely planted in France. Wines are tart, typically with herbal, “green” fruit flavors.</p>
+                </div>
+              </div>
             </div>
             <div class="wine-text">
               <h2>Sauvignon Blanc</h2>
-              <p>the most popular wine variety in the world</p>
+              <p>Crisp, acidic white wine with herbal flavors</p>
             </div>
           </div>
         </div>
-        <div class="card" onclick="flipCard(this)" id="white-Pinot-Gris">
+        <div class="card" id="white-pinot-gris">
           <div class="wine-container">
-            <img src="./images/Pinot-Gris.png" alt="Bottle of Pinot Gris wine">
+            <img src="./images/pinot-gris.png" alt="Bottle of Pinot Gris wine">
             <div class="wine-text">
               <h2>Pinot Gris</h2>
               <p>crisp, acidic white wine with herbal flavors</p>
@@ -323,9 +519,9 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="flipCard(this)" id="white-Chardonnay">
+        <div class="card" id="white-chardonnay">
           <div class="wine-container">
-            <img src="./images/Chardonnay.png" alt="Bottle of Chardonnay wine">
+            <img src="./images/chardonnay.png" alt="Bottle of Chardonnay wine">
             <div class="wine-text">
               <h2>Chardonnay</h2>
               <p>crisp, acidic white wine with herbal flavors</p>
@@ -342,9 +538,9 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="flipCard(this)" id="white-Riesling">
+        <div class="card" id="white-riesling">
           <div class="wine-container">
-            <img src="./images/Riesling.png" alt="Bottle of Riesling wine">
+            <img src="./images/riesling.png" alt="Bottle of Riesling wine">
             <div class="wine-text">
               <h2>Riesling</h2>
               <p>crisp, acidic white wine with herbal flavors</p>
@@ -361,9 +557,9 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="flipCard(this)" id="white-Gewurztraminer">
+        <div class="card" id="white-gewurztraminer">
           <div class="wine-container">
-            <img src="./images/Gewurztraminer.png" alt="Bottle of Gewurztraminer wine">
+            <img src="./images/gewurztraminer.png" alt="Bottle of Gewurztraminer wine">
             <div class="wine-text">
               <h2>Gewurztraminer</h2>
               <p>crisp, acidic white wine with herbal flavors</p>
@@ -380,9 +576,9 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="flipCard(this)" id="white-Moscato">
+        <div class="card" id="white-moscato">
           <div class="wine-container">
-            <img src="./images/Moscato.png" alt="Bottle of Moscato wine">
+            <img src="./images/moscato.png" alt="Bottle of Moscato wine">
             <div class="wine-text">
               <h2>Moscato</h2>
               <p>crisp, acidic white wine with herbal flavors</p>
@@ -408,7 +604,7 @@
     <footer>
       <div class="footer-content">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <button id="startQuizBtn" onclick="startQuiz()">Start Quiz</button>
+        <button id="startQuizBtn">Start Quiz</button>
       </div>
     </footer>
 

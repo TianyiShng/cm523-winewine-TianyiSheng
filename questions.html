@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
     <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
-    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/scripts_question.js" defer></script>
   </head>
   <body>
     <!-- YOUR HTML GOES HERE -->
@@ -29,40 +29,40 @@
     <main>
       <div class="quiz-container" id="question1">
         <div class="quiz-question">
-          <p><span>Q1:</span>&nbsp With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
+          <p><span>Q1: </span> With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
           <div class="options">
-              <button class="option" onclick="selectOption(this, 'A', 'question1')">A. Cabernet Sauvignon</button>
-              <button class="option" onclick="selectOption(this, 'B', 'question1')">B. Cabernet Franc</button>
-              <button class="option" onclick="selectOption(this, 'C', 'question1')">C. Riesling</button>
-              <button class="option" onclick="selectOption(this, 'D', 'question1')">D. Pinot Gris</button>
+              <button class="option">A. Cabernet Sauvignon</button>
+              <button class="option">B. Cabernet Franc</button>
+              <button class="option">C. Riesling</button>
+              <button class="option">D. Pinot Gris</button>
           </div>
         </div>
-        <div id="feedback-question1" class="red_feedback_card" style="display:none;">   
+        <div id="feedback-question1" class="red_feedback_card">   
           <!-- wine info -->
           <div class="wine-intro">
             <div class="rating-container">
               <div class="wine-bottle">
-                <img src="./images/Cabernet-Sauvignon.png" alt="Bottle of Cabernet Sauvignon wine">
+                <img src="./images/cabernet-sauvignon.png" alt="Bottle of Cabernet Sauvignon wine">
               </div>
               <div class="ratings">
                 <div class="rating">
-                  <div class="rating-bar-background"></div>
-                  <div class="rating-bar-foreground" style="width: 44px;"></div> <!-- Sweetness -->
+                  <div class="rating-bar-background-r"></div>
+                  <div class="rating-bar-foreground-r" id="cabernet-sauvignon-sweetness"></div>
                   <span>Sweetness</span>
                 </div>
                 <div class="rating">
-                  <div class="rating-bar-background"></div>
-                  <div class="rating-bar-foreground" style="width: 120px;"></div> <!-- Tannin -->
+                  <div class="rating-bar-background-r"></div>
+                  <div class="rating-bar-foreground-r" id="cabernet-sauvignon-tannin"></div>
                   <span>Tannin</span>
                 </div>
                 <div class="rating">
-                  <div class="rating-bar-background"></div>
-                  <div class="rating-bar-foreground" style="width: 70px;"></div> <!-- Acidity -->
+                  <div class="rating-bar-background-r"></div>
+                  <div class="rating-bar-foreground-r" id="cabernet-sauvignon-acidity"></div>
                   <span>Acidity</span>
                 </div>
                 <div class="rating">
-                  <div class="rating-bar-background"></div>
-                  <div class="rating-bar-foreground" style="width: 102px;"></div> <!-- Alcohol Content -->
+                  <div class="rating-bar-background-r"></div>
+                  <div class="rating-bar-foreground-r" id="cabernet-sauvignon-alcohol"></div>
                   <span>Alcohol Content</span>
                 </div>
               </div>
@@ -75,11 +75,11 @@
                   <p>Cedar</p>
                 </div>
                 <div class="feature">
-                  <img src="./images/BlackCurrant.png" alt="Black Currant">
+                  <img src="./images/black-currant.png" alt="Black Currant">
                   <p>Black Currant</p>
                 </div>
                 <div class="feature">
-                  <img src="./images/BlackCherry.png" alt="Black Cherry">
+                  <img src="./images/black-cherry.png" alt="Black Cherry">
                   <p>Black Cherry</p>
                 </div>
                 <div class="feature">
@@ -94,22 +94,22 @@
                 <div class="feature">
                   <img src="./images/france.png" alt="France Flag">
                   <p>France</p>
-                  <p>Burgundy</p>
-                </div>
-                <div class="feature">
-                  <img src="./images/new-zealand.png" alt="New Zealand Flag">
-                  <p>New Zealand</p>
-                  <p>Central Otago</p>
-                </div>
-                <div class="feature">
-                  <img src="./images/australia.png" alt="Australia Flag">
-                  <p>Australia</p>
-                  <p>Yarra Valley</p>
+                  <p>Bordeaux</p>
                 </div>
                 <div class="feature">
                   <img src="./images/usa.png" alt="USA Flag">
                   <p>United States</p>
-                  <p>Oregon</p>
+                  <p>California</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/chile.png" alt="Chile Flag">
+                  <p>Chile</p>
+                  <p>Colchagua</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/argentina.png" alt="Argentina Flag">
+                  <p>Argentina</p>
+                  <p>Mendoza</p>
                 </div>
               </div>
             </div>
@@ -142,81 +142,81 @@
           </div>
           <div class="wine-text">
             <h2>Cabernet Sauvignon</h2>
-            <p>the most popular wine variety in the world</p>
+            <p>The most popular wine variety in the world</p>
           </div>
         </div>
-        <div id="overlayQuiz-question1" class="overlay" onclick="closeFeedback('question1')" style="display:none;"></div>
+        <div id="overlayQuiz-question1" class="overlay"></div>
       </div>
-      <div class="quiz-container" id="question2" style="display: none;">
+      <div class="quiz-container" id="question2">
         <div class="quiz-question">
-          <p><span>Q2:</span>&nbsp With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
+          <p><span>Q2: </span> With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
           <div class="options">
-              <button class="option" onclick="selectOption(this, 'A', 'question2')">A. Cabernet Sauvignon </button>
-              <button class="option" onclick="selectOption(this, 'B', 'question2')">B. Cabernet Franc</button>
-              <button class="option" onclick="selectOption(this, 'C', 'question2')">C. Riesling</button>
-              <button class="option" onclick="selectOption(this, 'D', 'question2')">D. Pinot Gris</button>
+              <button class="option">A. Cabernet Sauvignon </button>
+              <button class="option">B. Cabernet Franc</button>
+              <button class="option">C. Riesling</button>
+              <button class="option">D. Pinot Gris</button>
           </div>
         </div>
-        <div id="feedback-question2" class="red_feedback_card" style="display:none;">
+        <div id="feedback-question2" class="red_feedback_card">
           <p>Incorrect. Please try again.</p>
         </div>
-        <div id="overlayQuiz-question2" class="overlay" onclick="closeFeedback('question2')" style="display:none;"></div>
+        <div id="overlayQuiz-question2" class="overlay"></div>
       </div>
-      <div class="quiz-container" id="question3" style="display: none;">
+      <div class="quiz-container" id="question3">
         <div class="quiz-question">
           <p><span>Q3:</span>&nbsp With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
           <div class="options">
-              <button class="option" onclick="selectOption(this, 'A', 'question3')">A. Cabernet Sauvignon</button>
-              <button class="option" onclick="selectOption(this, 'B', 'question3')">B. Cabernet Franc</button>
-              <button class="option" onclick="selectOption(this, 'C', 'question3')">C. Riesling</button>
-              <button class="option" onclick="selectOption(this, 'D', 'question3')">D. Pinot Gris</button>
+              <button class="option">A. Cabernet Sauvignon</button>
+              <button class="option">B. Cabernet Franc</button>
+              <button class="option">C. Riesling</button>
+              <button class="option">D. Pinot Gris</button>
           </div>
         </div>
-        <div id="feedback-question3" class="red_feedback_card" style="display:none;">
+        <div id="feedback-question3" class="red_feedback_card">
           <p>Incorrect. Please try again.</p>
         </div>
-        <div id="overlayQuiz-question3" class="overlay" onclick="closeFeedback('question3')" style="display:none;"></div>
+        <div id="overlayQuiz-question3" class="overlay"></div>
       </div>
-      <div class="quiz-container" id="question4" style="display: none;">
+      <div class="quiz-container" id="question4">
         <div class="quiz-question">
           <p><span>Q4:</span>&nbsp With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
           <div class="options">
-              <button class="option" onclick="selectOption(this, 'A', 'question4')">A. Cabernet Sauvignon</button>
-              <button class="option" onclick="selectOption(this, 'B', 'question4')">B. Cabernet Franc</button>
-              <button class="option" onclick="selectOption(this, 'C', 'question4')">C. Riesling</button>
-              <button class="option" onclick="selectOption(this, 'D', 'question4')">D. Pinot Gris</button>
+              <button class="option">A. Cabernet Sauvignon</button>
+              <button class="option">B. Cabernet Franc</button>
+              <button class="option">C. Riesling</button>
+              <button class="option">D. Pinot Gris</button>
           </div>
         </div>
-        <div id="feedback-question4" class="red_feedback_card" style="display:none;">
+        <div id="feedback-question4" class="red_feedback_card">
           <p>Incorrect. Please try again.</p>
         </div>
-        <div id="overlayQuiz-question4" class="overlay" onclick="closeFeedback('question4')" style="display:none;"></div>
+        <div id="overlayQuiz-question4" class="overlay"></div>
       </div>
-      <div class="quiz-container" id="question5" style="display: none;">
+      <div class="quiz-container" id="question5">
         <div class="quiz-question">
           <p><span>Q5:</span>&nbsp With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
           <div class="options">
-              <button class="option" onclick="selectOption(this, 'A', 'question5')">A. Cabernet Sauvignon</button>
-              <button class="option" onclick="selectOption(this, 'B', 'question5')">B. Cabernet Franc</button>
-              <button class="option" onclick="selectOption(this, 'C', 'question5')">C. Riesling</button>
-              <button class="option" onclick="selectOption(this, 'D', 'question5')">D. Pinot Gris</button>
+              <button class="option">A. Cabernet Sauvignon</button>
+              <button class="option">B. Cabernet Franc</button>
+              <button class="option">C. Riesling</button>
+              <button class="option">D. Pinot Gris</button>
           </div>
         </div>
-        <div id="feedback-question5" class="red_feedback_card" style="display:none;">
+        <div id="feedback-question5" class="red_feedback_card">
           <p>Incorrect. Please try again.</p>
         </div>
-        <div id="overlayQuiz-question5" class="overlay" onclick="closeFeedback('question5')" style="display:none;"></div>
+        <div id="overlayQuiz-question5" class="overlay"></div>
       </div>
   
       <div class="pagination">
-        <button id="button1" onclick="showQuestion('question1')">1</button>
-        <button id="button2" onclick="showQuestion('question2')">2</button>
-        <button id="button3" onclick="showQuestion('question3')">3</button>
-        <button id="button4" onclick="showQuestion('question4')">4</button>
-        <button id="button5" onclick="showQuestion('question5')">5</button>
+        <button id="button1">1</button>
+        <button id="button2">2</button>
+        <button id="button3">3</button>
+        <button id="button4">4</button>
+        <button id="button5">5</button>
       </div>
       
-      <button id="submitAnswers" onclick="checkAnswersAndOpenPage()">Submit</button>
+      <button id="submitAnswers">Submit</button>
 
 
     </main>

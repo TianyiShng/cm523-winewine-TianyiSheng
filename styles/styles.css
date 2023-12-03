@@ -216,6 +216,10 @@ nav a:hover {
     margin: 0 2em;
 }
 
+#white-wines {
+    display: none;
+}
+
 .card {
     position: relative;
     display: inline-block;
@@ -298,7 +302,7 @@ nav a:hover {
     align-items: center;
 }
 
-.rating-bar-background {
+.rating-bar-background-r {
     height: 14px;
     background-color: rgb(174,33,33,0.3);
     border-radius: 7px;
@@ -306,12 +310,44 @@ nav a:hover {
     position: relative;
 }
 
-.rating-bar-foreground {
+.rating-bar-foreground-r {
     height: 14px;
     background-color: #AE2121; 
     border-radius: 7px;
     position: absolute;
 }
+
+#cabernet-sauvignon-sweetness {width: 60px;}
+#cabernet-sauvignon-tannin {width: 126px;}
+#cabernet-sauvignon-acidity {width: 90px;}
+#cabernet-sauvignon-alcohol {width: 110px;}
+
+#pinot-noir-sweetness {width: 34px;}
+#pinot-noir-tannin {width: 60px;}
+#pinot-noir-acidity {width: 112px;}
+#pinot-noir-alcohol {width: 90px;}
+
+.rating-bar-background-w {
+    height: 14px;
+    background-color: rgb(240,193,23,0.4);
+    border-radius: 7px;
+    width: 140px;
+    position: relative;
+}
+
+.rating-bar-foreground-w {
+    height: 14px;
+    background-color: #F0C117; 
+    border-radius: 7px;
+    position: absolute;
+}
+
+#sauvignon-blanc-sweetness {width: 48px;}
+#sauvignon-blanc-body {width: 48px;}
+#sauvignon-blanc-acidity {width: 140px;}
+#sauvignon-blanc-alcohol {width: 94px;}
+
+
 
 .rating span {
     white-space: nowrap;
@@ -429,6 +465,14 @@ button#submitAnswers {
 
 button#startQuizBtn:hover, button#submitAnswers:hover {
     text-decoration: underline;
+}
+
+#question2, #question3, #question4, #question5 {
+    display: none;
+}
+
+.red_feedback_card {
+    display: none;
 }
 
 .quiz-container {
