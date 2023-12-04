@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- PUT A TITLE IN HERE -->
-    <title>This is the demo</title>
+    <title>WineWine</title>
     <!-- PUT A DESCRIPTION IN HERE -->
     <meta name="description" content="describe content of the page here...." />
     <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
@@ -39,36 +39,39 @@
     <nav>
       <a href="index.html">WineWine</a>
       <ul>
-        <li><a href="index.html#wine-intro">Wines</a></li>
+        <li><a id="winesMenu">Wines</a></li>
         <li><a href="quiz.html">Quiz</a></li>
       </ul>
     </nav>
-    <main>
-      <div id="overlay" class="overlay"></div>
-      <div id="menu-icon" class="menu-icon"><img src="./images/menu icon.png"></div>
-      <div class="menu-container"></div>
-        <div id="menu-card" class="menu-card">
-          <ul>
-            <li><a href="#red-wines">Red Wine</a></li>
-            <li><a href="#red-cabernet-sauvignon">Cabernet Sauvignon</a></li>
-            <li><a href="#red-pinot-noir">Pinot Noir</a></li>
-            <li><a href="#red-shiraz">Shiraz (Syrah)</a></li>
-            <li><a href="#red-merlot">Merlot</a></li>
-            <li><a href="#red-cabernet-franc">Cabernet Franc</a></li>
-            <li><a href="#red-grenache">Grenache</a></li>
-          </ul>
-          <ul>
-            <li><a href="#white-wines">White Wine</a></li>
-            <li><a href="#white-sauvignon-blanc">Sauvignon Blanc</a></li>
-            <li><a href="#white-pinot-gris">Pinot Gris</a></li>
-            <li><a href="#white-chardonnay">Chardonnay</a></li>
-            <li><a href="#white-riesling">Riesling</a></li>
-            <li><a href="#white-gewurztraminer">Gewurztraminer</a></li>
-            <li><a href="#white-moscato">Moscato</a></li>
-          </ul>
-        </div>
+    <div id="overlay" class="overlay"></div>
+      <!-- 
+        <div id="menu-icon" class="menu-icon"><img src="./images/menu icon.png"></div>
+      -->
+    <div class="menu-container">
+      <div id="menu-card" class="menu-card">
+        <ul>
+          <li><a href="#red-wines">Red Wine</a></li>
+          <li><a href="#red-cabernet-sauvignon">Cabernet Sauvignon</a></li>
+          <li><a href="#red-pinot-noir">Pinot Noir</a></li>
+          <li><a href="#red-shiraz">Shiraz (Syrah)</a></li>
+          <li><a href="#red-merlot">Merlot</a></li>
+          <li><a href="#red-cabernet-franc">Cabernet Franc</a></li>
+          <li><a href="#red-grenache">Grenache</a></li>
+        </ul>
+        <ul>
+          <li><a href="#white-wines">White Wine</a></li>
+          <li><a href="#white-sauvignon-blanc">Sauvignon Blanc</a></li>
+          <li><a href="#white-pinot-gris">Pinot Gris</a></li>
+          <li><a href="#white-chardonnay">Chardonnay</a></li>
+          <li><a href="#white-riesling">Riesling</a></li>
+          <li><a href="#white-gewurztraminer">Gewurztraminer</a></li>
+          <li><a href="#white-moscato">Moscato</a></li>
+        </ul>
       </div>
-      <div id="wine-intro"></div>
+    </div>
+    <main>
+      <div id="wine-intro">
+
       <div class="wine-card" id="red-wines">
         <div class="card" id="red-cabernet-sauvignon">
           <div class="wine-container">
@@ -309,17 +312,115 @@
             <img src="./images/shiraz.png" alt="Bottle of Shiraz (Syrah) wine">
             <div class="wine-text">
               <h2>Shiraz (Syrah)</h2>
-              <p>the most popular wine variety in the world</p>
+              <p>Bold, spicy red wine with dark fruit flavors</p>
             </div>
           </div>
           <div class="wine-info">
             <!-- wine info -->
             <div class="wine-intro">
-              <p>wine information</p>
+              <div class="rating-container">
+                <div class="wine-bottle">
+                  <img src="./images/shiraz.png" alt="Bottle of Shiraz (Syrah) wine">
+                </div>
+                <div class="ratings">
+                  <div class="rating">
+                    <div class="rating-bar-background-r"></div>
+                    <div class="rating-bar-foreground-r" id="shiraz-sweetness"></div>
+                    <span>Sweetness</span>
+                  </div>
+                  <div class="rating">
+                    <div class="rating-bar-background-r"></div>
+                    <div class="rating-bar-foreground-r" id="shiraz-tannin"></div>
+                    <span>Tannin</span>
+                  </div>
+                  <div class="rating">
+                    <div class="rating-bar-background-r"></div>
+                    <div class="rating-bar-foreground-r" id="shiraz-acidity"></div>
+                    <span>Acidity</span>
+                  </div>
+                  <div class="rating">
+                    <div class="rating-bar-background-r"></div>
+                    <div class="rating-bar-foreground-r" id="shiraz-alcohol"></div>
+                    <span>Alcohol Content</span>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-container">
+                <h3>Tastes</h3>
+                <div class="features">
+                  <div class="feature">
+                    <img src="./images/truffle.png" alt="Truffle">
+                    <p>Truffle</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/violet.png" alt="Violet">
+                    <p>Violet</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/chocolate.png" alt="Chocolate">
+                    <p>Chocolate</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/black_pepper.png" alt="Black Pepper">
+                    <p>Black Pepper</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-container" id="origin">
+                <h3>Origin</h3>
+                <div class="features">
+                  <div class="feature">
+                    <img src="./images/france.png" alt="France Flag">
+                    <p>France</p>
+                    <p>Rhone Valley</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/spain.png" alt="Spain Flag">
+                    <p>Spain</p>
+                    <p>Priorat</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/australia.png" alt="Australia Flag">
+                    <p>Australis</p>
+                    <p>Barossa Valley</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/s_africa.png" alt="South Africa Flag">
+                    <p>South Africa</p>
+                    <p>Stellenbosch</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-container">
+                <h3>Food Pairing</h3>
+                <div class="features">
+                  <div class="feature">
+                    <img src="./images/lamb.png" alt="Lamb">
+                    <p>Lamb</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/beef.png" alt="Beef">
+                    <p>Beef</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/smoked.png" alt="Smoked Meats">
+                    <p>Smoked Meats</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/bbq_pork.png" alt="Barbecue Pork">
+                    <p>Barbecue Pork</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-container">
+                <div class="description">
+                  <p>Syrah (aka Shiraz) is a full-bodied red wine having intense fruit flavors and medium-weight tannins. Syrah is commonly blended with Grenache and Mourvèdre to create the red Rhône blend. The wine often has a meaty (beef broth, jerky) quality.</p>
+                </div>
+              </div>
             </div>
             <div class="wine-text">
-              <h2>Cabernet Sauvignon</h2>
-              <p>the most popular wine variety in the world</p>
+              <h2>Shiraz (Syrah)</h2>
+              <p>Bold, spicy red wine with dark fruit flavors</p>
             </div>
           </div>
         </div>
@@ -328,17 +429,115 @@
             <img src="./images/merlot.png" alt="Bottle of Merlot wine">
             <div class="wine-text">
               <h2>Merlot</h2>
-              <p>the most popular wine variety in the world</p>
+              <p>Smooth red with plum flavors and velvety textur</p>
             </div>
           </div>
           <div class="wine-info">
             <!-- wine info -->
             <div class="wine-intro">
-              <p>wine information</p>
+              <div class="rating-container">
+                <div class="wine-bottle">
+                  <img src="./images/merlot.png" alt="Bottle of Merlot wine">
+                </div>
+                <div class="ratings">
+                  <div class="rating">
+                    <div class="rating-bar-background-r"></div>
+                    <div class="rating-bar-foreground-r" id="merlot-sweetness"></div>
+                    <span>Sweetness</span>
+                  </div>
+                  <div class="rating">
+                    <div class="rating-bar-background-r"></div>
+                    <div class="rating-bar-foreground-r" id="merlot-tannin"></div>
+                    <span>Tannin</span>
+                  </div>
+                  <div class="rating">
+                    <div class="rating-bar-background-r"></div>
+                    <div class="rating-bar-foreground-r" id="merlot-acidity"></div>
+                    <span>Acidity</span>
+                  </div>
+                  <div class="rating">
+                    <div class="rating-bar-background-r"></div>
+                    <div class="rating-bar-foreground-r" id="merlot-alcohol"></div>
+                    <span>Alcohol Content</span>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-container">
+                <h3>Tastes</h3>
+                <div class="features">
+                  <div class="feature">
+                    <img src="./images/vanilla.png" alt="Vanilla">
+                    <p>Vanilla</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/black-cherry.png" alt="Black Cherry">
+                    <p>Black Cherry</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/chocolate.png" alt="Chocolate">
+                    <p>Chocolate</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/black_plum.png" alt="Black Plum">
+                    <p>Black Plum</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-container" id="origin">
+                <h3>Origin</h3>
+                <div class="features">
+                  <div class="feature">
+                    <img src="./images/france.png" alt="France Flag">
+                    <p>France</p>
+                    <p>Bordeaux</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/australia.png" alt="Australia Flag">
+                    <p>Australis</p>
+                    <p>Barossa Valley</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/usa.png" alt="USA Flag">
+                    <p>United States</p>
+                    <p>California</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/italy.png" alt="Italy Flag">
+                    <p>Italy</p>
+                    <p>Tuscany</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-container">
+                <h3>Food Pairing</h3>
+                <div class="features">
+                  <div class="feature">
+                    <img src="./images/roasted_vegateble.png" alt="Roasted Veggies">
+                    <p>Roasted Veggies</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/duck.png" alt="Duck">
+                    <p>Duck</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/turkey.png" alt="Turkey">
+                    <p>Turkey</p>
+                  </div>
+                  <div class="feature">
+                    <img src="./images/beef.png" alt="Beef">
+                    <p>Beef</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-container">
+                <div class="description">
+                  <p>Merlot is a smooth, medium-bodied red wine with plum and black cherry flavors, originating from Bordeaux, France. It's known for its velvety texture and moderate tannins, making it versatile for pairing with various dishes, including meats and pastas.</p>
+                </div>
+              </div>
             </div>
             <div class="wine-text">
-              <h2>Cabernet Sauvignon</h2>
-              <p>the most popular wine variety in the world</p>
+              <h2>Merlot</h2>
+              <p>Smooth red with plum flavors and velvety textur</p>
             </div>
           </div>
         </div>
@@ -451,6 +650,11 @@
                     <p>Bordeaux</p>
                   </div>
                   <div class="feature">
+                    <img src="./images/new-zealand.png" alt="New Zealand Flag">
+                    <p>New Zealand</p>
+                    <p>Marlborough</p>
+                  </div>
+                  <div class="feature">
                     <img src="./images/usa.png" alt="USA Flag">
                     <p>United States</p>
                     <p>California</p>
@@ -458,12 +662,7 @@
                   <div class="feature">
                     <img src="./images/chile.png" alt="Chile Flag">
                     <p>Chile</p>
-                    <p>Colchagua</p>
-                  </div>
-                  <div class="feature">
-                    <img src="./images/argentina.png" alt="Argentina Flag">
-                    <p>Argentina</p>
-                    <p>Mendoza</p>
+                    <p>Central Valley</p>
                   </div>
                 </div>
               </div>
@@ -599,6 +798,8 @@
       <div class="pagination">
         <button id="redBtn">1</button>
         <button id="whiteBtn">2</button>
+      </div>
+
       </div>
     </main>
     <footer>

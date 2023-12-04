@@ -159,17 +159,23 @@ nav a:hover {
 }
 
 .menu-container {
-    position: relative;
+    position: fixed;
+    top: 60px;
+    margin: auto;
+    max-width: 1440px;
+    width: 100%;
+    z-index: 1001; 
 }
 
 .menu-card {
     display: none;
-    position: absolute; 
-    z-index: 1001; 
-    top: 840px; 
-    left: 96px;
+    position: absolute;
+    top: 0;
+    right: 24px;
     background-color: #FAF7F2;
     color: black;
+    z-index: 1002;
+    width: auto; 
   }
 
 .menu-card.visible {
@@ -213,7 +219,7 @@ nav a:hover {
     flex-wrap: wrap;
     justify-content: space-around; 
     gap: 16px; 
-    margin: 0 2em;
+    margin: 2em 2em 0 2em;
 }
 
 #white-wines {
@@ -224,6 +230,10 @@ nav a:hover {
     position: relative;
     display: inline-block;
     margin-top: 0.75em;
+}
+
+.card:hover {
+    background-color: #F9F1E3;
 }
 
 .wine-container {
@@ -326,6 +336,17 @@ nav a:hover {
 #pinot-noir-tannin {width: 60px;}
 #pinot-noir-acidity {width: 112px;}
 #pinot-noir-alcohol {width: 90px;}
+
+#shiraz-sweetness {width: 34px;}
+#shiraz-tannin {width: 110px;}
+#shiraz-acidity {width: 110px;}
+#shiraz-alcohol {width: 110px;}
+
+#merlot-sweetness {width: 34px;}
+#merlot-tannin {width: 110px;}
+#merlot-acidity {width: 90px;}
+#merlot-alcohol {width: 110px;}
+
 
 .rating-bar-background-w {
     height: 14px;
@@ -566,11 +587,13 @@ button#submitAnswers {
     justify-content: center;
     align-items: center;
     margin-top: 72px;
+    max-width: 1440px;
+    width: 100%;
+    height: 80vh;
 }
 
 .completion-container {
     display: flex;
-    flex-wrap: wrap;
     align-items: center; 
     justify-content: center; 
     height: 100%;
@@ -588,7 +611,7 @@ button#submitAnswers {
 }
  
 .completion-text-container {
-    flex: 1 1 auto;
+
     max-width: 600px;
     margin: 24px;
 }
@@ -596,4 +619,16 @@ button#submitAnswers {
 .completion-text-container h1 {
     font-family: 'Oleo Script', cursive;
     font-size: 48px;
+}
+
+@media (max-width: 900px) {
+    .completion-container {
+        flex-wrap: wrap;
+    }
+    .completion-text-container {
+        flex: 1 1 auto;
+        max-width: 385px;
+        margin-top: 0;
+        text-align: center; /*may change*/
+    } 
 }
