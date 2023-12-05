@@ -347,6 +347,16 @@ nav a:hover {
 #merlot-acidity {width: 90px;}
 #merlot-alcohol {width: 110px;}
 
+#cabernet-franc-sweetness {width: 34px;}
+#cabernet-franc-tannin {width: 88px;}
+#cabernet-franc-acidity {width: 106px;}
+#cabernet-franc-alcohol {width: 88px;}
+
+#grenache-sweetness {width: 34px;}
+#grenache-tannin {width: 78px;}
+#grenache-acidity {width: 78px;}
+#grenache-alcohol {width: 140px;}
+
 
 .rating-bar-background-w {
     height: 14px;
@@ -368,6 +378,30 @@ nav a:hover {
 #sauvignon-blanc-acidity {width: 140px;}
 #sauvignon-blanc-alcohol {width: 94px;}
 
+#pinot-gris-sweetness {width: 120px;}
+#pinot-gris-body {width: 58px;}
+#pinot-gris-acidity {width: 120px;}
+#pinot-gris-alcohol {width: 94px;}
+
+#chardonnay-sweetness {width: 48px;}
+#chardonnay-body {width: 80px;}
+#chardonnay-acidity {width: 80px;}
+#chardonnay-alcohol {width: 116px;}
+
+#riesling-sweetness {width: 140px;}
+#riesling-body {width: 30px;}
+#riesling-acidity {width: 140px;}
+#riesling-alcohol {width: 60px;}
+
+#gewurztraminer-sweetness {width: 120px;}
+#gewurztraminer-body {width: 90px;}
+#gewurztraminer-acidity {width: 30px;}
+#gewurztraminer-alcohol {width: 120px;}
+
+#moscato-sweetness {width: 120px;}
+#moscato-body {width: 36px;}
+#moscato-acidity {width: 56px;}
+#moscato-alcohol {width: 20px;}
 
 
 .rating span {
