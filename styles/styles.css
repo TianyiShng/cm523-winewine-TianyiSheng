@@ -72,6 +72,15 @@ header .container {
     }
 }
 
+@media (max-width: 470px) {
+    header .container p:nth-child(1) {
+        display: none;
+    }
+    header .container p:nth-child(3) {
+        display: none;
+    }
+}
+
 header .container p {
     margin: 12px 24px;
     font-size: 18px;
