@@ -286,6 +286,7 @@ nav a:hover {
 
 .card:hover {
     background-color: #F9F1E3;
+    cursor: pointer;
 }
 
 .wine-container {
@@ -532,11 +533,20 @@ h3 {
     background: none;
     border: none;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .pagination button:hover {
     text-decoration: underline;
 }
+
+/*#redBtn:active {
+    color: #AE2121;
+}
+
+#whiteBtn:active {
+    color: #F0C117;
+}*/
 
 footer {
     display: flex;
