@@ -72,15 +72,6 @@ header .container {
     }
 }
 
-@media (max-width: 470px) {
-    header .container p:nth-child(1) {
-        display: none;
-    }
-    header .container p:nth-child(3) {
-        display: none;
-    }
-}
-
 header .container p {
     margin: 12px 24px;
     font-size: 18px;
@@ -120,6 +111,24 @@ header .container h2 {
 .files li {
     font-size: 18px;
     margin-right: 18px;
+}
+
+@media (max-width: 470px) {
+    #web_intro p:nth-child(1) {
+        display: none;
+    }
+    #web_intro p:nth-child(2) {
+        margin-top: 32px;
+    }
+    #web_intro p:nth-child(3) {
+        display: none;
+    }
+    header .container p, .files li {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 22px;
+    }
 }
 
 #scroll {
