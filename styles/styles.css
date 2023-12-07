@@ -119,6 +119,7 @@ header .container h2 {
     }
     #web_intro p:nth-child(2) {
         margin-top: 32px;
+        margin-bottom: 24px;
     }
     #web_intro p:nth-child(3) {
         display: none;
@@ -126,8 +127,15 @@ header .container h2 {
     header .container p, .files li {
         font-size: 16px;
     }
-    h2 {
+    header .container h2 {
         font-size: 22px;
+        margin-top: 0px;
+    }
+    .files{
+        margin-bottom: 12px;
+    }
+    .container ul:last-child {
+        margin-bottom: 32px;
     }
 }
 
