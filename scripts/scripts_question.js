@@ -17,36 +17,46 @@ function showQuestion(questionId) {
   document.getElementById(questionId).style.display = 'flex';
 }
 
-//quiz answer selected
+
+
+//answer select
 document.querySelectorAll('.quiz-container').forEach(container => {
   let questionNumber = container.id;
-  let options = container.querySelectorAll('.option');
-  options.forEach((button, index) => {
-    button.addEventListener('click', () => {
-      selectOption(button, index, questionNumber);
+  let options = container.querySelectorAll('input[type="radio"]');
+  options.forEach((radioInput) => {
+    radioInput.addEventListener('click', () => {
+      selectOption(radioInput, questionNumber);
     });
   });
 });
 
-function selectOption(selectedButton, selectedIndex, questionNumber) {
-  const correctAnswers = {
-      'question1': 0,
-      'question2': 2, 
-      'question3': 1, 
-      'question4': 2, 
-      'question5': 3
-  };
+
+
+const correctAnswers = {
+  'question1': '0',
+  'question2': '2', 
+  'question3': '1', 
+  'question4': '2', 
+  'question5': '3'
+};
+
+function selectOption(selectedRadio, questionNumber) {
+
+  //reset styles
+  let labels = document.querySelectorAll('#' + questionNumber + ' .option');
+  labels.forEach(label => {
+      label.classList.remove('correct', 'incorrect');
+  });
+
+  //find the index of the selected radio button
+  let selectedIndex = Array.from(labels).findIndex(label => label.querySelector('input[type="radio"]').checked);
 
   const correctOption = correctAnswers[questionNumber];
 
-  document.querySelectorAll('#' + questionNumber + ' .option').forEach(button => {
-      button.classList.remove('correct', 'incorrect');
-  });
-
-  if (selectedIndex === correctOption) {
-      selectedButton.classList.add('correct');
+  if (selectedIndex.toString() === correctOption) {
+      selectedRadio.parentElement.classList.add('correct');
   } else {
-      selectedButton.classList.add('incorrect');
+      selectedRadio.parentElement.classList.add('incorrect');
       document.getElementById('overlayQuiz-' + questionNumber).style.display = 'block';
       document.getElementById('feedback-' + questionNumber).style.display = 'block';
   }
@@ -61,30 +71,21 @@ let overlays = document.getElementsByClassName('overlay');
     });
   });
 
-
 function closeFeedback(questionNumber) {
   document.getElementById('overlayQuiz-' + questionNumber).style.display = 'none';
   document.getElementById('feedback-' + questionNumber).style.display = 'none';
 }
 
+
+//submit answers
 const submitButton = document.getElementById('submitAnswers');
 submitButton.addEventListener('click', checkAnswersAndOpenPage);
 
 function checkAnswersAndOpenPage() {
-  const correctAnswers = {
-      'question1': 0,
-      'question2': 2, 
-      'question3': 1, 
-      'question4': 2, 
-      'question5': 3
-  };
-
   let allCorrect = true;
   for (let question in correctAnswers) {
-    const options = document.querySelectorAll('#' + question + ' .option');
-    const selectedOptionIndex = Array.from(options).findIndex(el => el.classList.contains('correct'));
-        
-    if (selectedOptionIndex !== correctAnswers[question]) {
+    const selectedOption = document.querySelector(`#${question} input[type="radio"]:checked`);
+    if (!selectedOption || selectedOption.value !== correctAnswers[question]) {
       allCorrect = false;
       break;
     }

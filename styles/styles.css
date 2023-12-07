@@ -42,7 +42,7 @@ header .homepage {
     place-items: center;
     min-height: 100vh;
     padding: 2em;
-    background-image: url(../images/wine_noise.jpg);
+    background-image: linear-gradient(rgba(250, 247, 242, 0), rgba(250, 247, 242, 0.3) 90%, rgba(250, 247, 242, 0.6)), url(../images/wine_noise.jpg);
     background-size: cover;
 }
 
@@ -54,12 +54,63 @@ header .container {
     position: absolute; 
     top: 50%;
     transform: translateY(-50%);
-    left: 0px;
-    margin: 24px;
+    margin: 24px 24px 24px 80px;
     max-width: 640px;
-    padding: 10px; 
     box-sizing: border-box; 
-    background-color: rgb(250,247,242,0.7);
+    background-color: rgb(250,247,242,0.8);
+}
+
+@media (min-width: 800px) {
+    header .container {
+        left: 0px;
+    }
+}
+
+@media (max-width: 800px) {
+    header .container {
+        margin: 24px;
+    }
+}
+
+header .container p {
+    margin: 12px 24px;
+    font-size: 18px;
+}
+
+header .container p:first-child {
+    margin-top: 32px;
+    /*font-family: 'Oleo Script', cursive;*/
+}
+
+h2 {
+    font-family: 'Oleo Script', cursive;
+    font-weight: lighter;
+}
+
+header .container h2 {
+    margin: 32px 24px 0px 24px;
+}
+
+.files {
+    margin: 0px 24px 32px 24px;
+    list-style: none;   
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.files a {
+    color: #1a1a1a;
+}
+
+.files a:hover {
+    color: #AE2121;
+}
+
+.files li {
+    font-size: 18px;
+    margin-right: 18px;
 }
 
 #scroll {
@@ -76,12 +127,13 @@ header .container {
 
 #scroll p{
     margin: 0;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 1);
 }
 
 #scroll img {
     width: 30px;
     height: 100%;
-    margin-top: 12px;
+    margin-top: 8px;
 }
 
 nav {
@@ -327,35 +379,35 @@ nav a:hover {
     position: absolute;
 }
 
-#cabernet-sauvignon-sweetness {width: 60px;}
-#cabernet-sauvignon-tannin {width: 126px;}
-#cabernet-sauvignon-acidity {width: 90px;}
-#cabernet-sauvignon-alcohol {width: 110px;}
+#cabernet-sauvignon-sweetness {width: 18px;}
+#cabernet-sauvignon-tannin {width: 129px;}
+#cabernet-sauvignon-acidity {width: 103px;}
+#cabernet-sauvignon-alcohol {width: 121px;}
 
-#pinot-noir-sweetness {width: 34px;}
-#pinot-noir-tannin {width: 60px;}
-#pinot-noir-acidity {width: 112px;}
-#pinot-noir-alcohol {width: 90px;}
+#pinot-noir-sweetness {width: 32px;}
+#pinot-noir-tannin {width: 85px;}
+#pinot-noir-acidity {width: 121px;}
+#pinot-noir-alcohol {width: 103px;}
 
-#shiraz-sweetness {width: 34px;}
-#shiraz-tannin {width: 110px;}
-#shiraz-acidity {width: 110px;}
-#shiraz-alcohol {width: 110px;}
+#shiraz-sweetness {width: 27px;}
+#shiraz-tannin {width: 121px;}
+#shiraz-acidity {width: 103px;}
+#shiraz-alcohol {width: 130px;}
 
-#merlot-sweetness {width: 34px;}
-#merlot-tannin {width: 110px;}
-#merlot-acidity {width: 90px;}
-#merlot-alcohol {width: 110px;}
+#merlot-sweetness {width: 36px;}
+#merlot-tannin {width: 94px;}
+#merlot-acidity {width: 94px;}
+#merlot-alcohol {width: 112px;}
 
-#cabernet-franc-sweetness {width: 34px;}
-#cabernet-franc-tannin {width: 88px;}
-#cabernet-franc-acidity {width: 106px;}
-#cabernet-franc-alcohol {width: 88px;}
+#cabernet-franc-sweetness {width: 22px;}
+#cabernet-franc-tannin {width: 112px;}
+#cabernet-franc-acidity {width: 112px;}
+#cabernet-franc-alcohol {width: 112px;}
 
-#grenache-sweetness {width: 34px;}
-#grenache-tannin {width: 78px;}
-#grenache-acidity {width: 78px;}
-#grenache-alcohol {width: 140px;}
+#grenache-sweetness {width: 41px;}
+#grenache-tannin {width: 76px;}
+#grenache-acidity {width: 85px;}
+#grenache-alcohol {width: 121px;}
 
 
 .rating-bar-background-w {
@@ -373,35 +425,35 @@ nav a:hover {
     position: absolute;
 }
 
-#sauvignon-blanc-sweetness {width: 48px;}
-#sauvignon-blanc-body {width: 48px;}
-#sauvignon-blanc-acidity {width: 140px;}
-#sauvignon-blanc-alcohol {width: 94px;}
+#sauvignon-blanc-sweetness {width: 20px;}
+#sauvignon-blanc-body {width: 40px;}
+#sauvignon-blanc-acidity {width: 112px;}
+#sauvignon-blanc-alcohol {width: 89px;}
 
-#pinot-gris-sweetness {width: 120px;}
-#pinot-gris-body {width: 58px;}
-#pinot-gris-acidity {width: 120px;}
-#pinot-gris-alcohol {width: 94px;}
+#pinot-gris-sweetness {width: 34px;}
+#pinot-gris-body {width: 54px;}
+#pinot-gris-acidity {width: 100px;}
+#pinot-gris-alcohol {width: 89px;}
 
-#chardonnay-sweetness {width: 48px;}
-#chardonnay-body {width: 80px;}
-#chardonnay-acidity {width: 80px;}
-#chardonnay-alcohol {width: 116px;}
+#chardonnay-sweetness {width: 34px;}
+#chardonnay-body {width: 68px;}
+#chardonnay-acidity {width: 89px;}
+#chardonnay-alcohol {width: 96px;}
 
-#riesling-sweetness {width: 140px;}
-#riesling-body {width: 30px;}
-#riesling-acidity {width: 140px;}
-#riesling-alcohol {width: 60px;}
+#riesling-sweetness {width: 55px;}
+#riesling-body {width: 47px;}
+#riesling-acidity {width: 107px;}
+#riesling-alcohol {width: 76px;}
 
-#gewurztraminer-sweetness {width: 120px;}
-#gewurztraminer-body {width: 90px;}
-#gewurztraminer-acidity {width: 30px;}
-#gewurztraminer-alcohol {width: 120px;}
+#gewurztraminer-sweetness {width: 76px;}
+#gewurztraminer-body {width: 61px;}
+#gewurztraminer-acidity {width: 75px;}
+#gewurztraminer-alcohol {width: 82px;}
 
-#moscato-sweetness {width: 120px;}
-#moscato-body {width: 36px;}
-#moscato-acidity {width: 56px;}
-#moscato-alcohol {width: 20px;}
+#moscato-sweetness {width: 98px;}
+#moscato-body {width: 53px;}
+#moscato-acidity {width: 68px;}
+#moscato-alcohol {width: 54px;}
 
 
 .rating span {
@@ -479,7 +531,7 @@ h3 {
 .pagination button {
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .pagination button:hover {
@@ -488,16 +540,30 @@ h3 {
 
 footer {
     display: flex;
-    flex-direction: column;
     justify-content: center; 
     text-align: center; 
     height: 400px; 
     background-color: #6B1515;
     color: #FAF7F2; 
 }
+
+.footer-content {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
   
 .footer-content p {
-    margin: 0em 7em 4.75em 7em;
+    margin: 0 24px;
+}
+
+.footer-content #startQuizBtn {
+    align-self: center;
+    margin-top: 72px;
 }
   
   
@@ -511,6 +577,24 @@ button#startQuizBtn, button#submitAnswers {
     font-weight: bold;
     border-radius: 22px;
     cursor: pointer;
+}
+
+#quiz_homepage .container {
+    background-color: rgb(250,247,242,0.85);
+    display: flex; 
+    flex-direction: column;
+}
+
+#quiz_homepage .button-content {
+    margin: 60px 24px 32px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quiz_homepage button#startQuizBtn {
+    background-color: #6B1515;
+    color: #FAF7F2;
 }
 
 button#submitAnswers {
@@ -595,7 +679,8 @@ button#startQuizBtn:hover, button#submitAnswers:hover {
 
 .red_feedback_card {
     width: 360px; 
-    height: 710px;
+    height: 594px;
+    /*height:710px; */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -661,7 +746,7 @@ button#submitAnswers {
     }
     .completion-text-container {
         flex: 1 1 auto;
-        max-width: 385px;
+        max-width: 400px;
         margin-top: 0;
         text-align: center; /*may change*/
     } 

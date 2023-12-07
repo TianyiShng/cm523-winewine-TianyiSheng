@@ -9,22 +9,22 @@ const overlay = document.getElementById('overlay');
 // open mene
 //menuIcon.addEventListener('click', function() {
 winesMenu.addEventListener('click', function() {
-  overlay.classList.toggle('visible');
-  menuCard.classList.toggle('visible');
+  overlay.style.display = 'block';
+  menuCard.style.display = 'block';
 });
   
 // close menu
 function closeMenu() {
-  overlay.classList.remove('visible');
-  menuCard.classList.remove('visible');
+  overlay.style.display = 'none';
+  menuCard.style.display = 'none';
 }
 
 overlay.addEventListener('click', closeMenu);
 
 // 遍历所有的菜单项
 document.querySelectorAll('#menu-card a').forEach(function(link) {
-  link.addEventListener('click', function(e) {
-    e.preventDefault(); // 阻止默认的锚点跳转行为
+  link.addEventListener('click', function(event) {
+    event.preventDefault(); // 阻止默认的锚点跳转行为
     let targetId = this.getAttribute('href'); // 获取锚点的href属性，即目标id
 
     // 根据href的值判断是红葡萄酒还是白葡萄酒
