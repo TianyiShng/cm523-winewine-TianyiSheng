@@ -101,7 +101,7 @@ header .container h2 {
 }
 
 .files a {
-    color: #1a1a1a;
+    color: black;
 }
 
 .files a:hover {
@@ -237,7 +237,7 @@ nav a:hover {
     top: 0;
     right: 24px;
     background-color: #FAF7F2;
-    color: #1a1a1a;
+    color: black;
     z-index: 1002;
     width: auto; 
   }
@@ -257,7 +257,7 @@ nav a:hover {
 }
 
 .menu-card ul li a {
-    color: #1a1a1a;
+    color: black;
     text-decoration: none;
 }
 
@@ -316,7 +316,7 @@ nav a:hover {
   
 .wine-text {
     position: absolute;
-    color: #1a1a1a; 
+    color: black;
     text-align: center;
     width: 100%;
     position: absolute;
@@ -352,7 +352,7 @@ nav a:hover {
 
 #white-wines .wine-info .wine-text {
     background-color: #F4ECB9;
-    color:#1a1a1a;
+    color:black;
 }
 
 .rating-container {
@@ -723,7 +723,7 @@ button#startQuizBtn:hover, button#submitAnswers:hover {
 
 .white_feedback_card .wine-text {
     background-color: #F4ECB9;
-    color:#1a1a1a;
+    color:black;
 }
 
 button#submitAnswers {
@@ -806,7 +806,7 @@ button#submitAnswers {
 
 #alertCard p {
     margin: 0;
-    color: #1a1a1a;
+    color: black;
 } 
 
 #alertCard h2 {
