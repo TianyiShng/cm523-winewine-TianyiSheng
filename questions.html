@@ -30,50 +30,50 @@
     <main>
       <div class="quiz-container" id="question1">
         <div class="quiz-question">
-          <p><span>Q1: </span> With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
+          <p><span>Q1: </span>If you're enjoying a spicy Thai meal, which wine would be the best match?</p>
           <div class="options">
             <div class="options">
               <label class="option">
-                <input type="radio" name="question1" value="0"> A. Cabernet Sauvignon
+                <input type="radio" name="question1" value="0"> A. Gewurztraminer
               </label>
               <label class="option">
-                <input type="radio" name="question1" value="1"> B. Cabernet Franc
+                <input type="radio" name="question1" value="1"> B. Chardonnay
               </label>
               <label class="option">
-                <input type="radio" name="question1" value="2"> C. Riesling
+                <input type="radio" name="question1" value="2"> C. Sauvignon Blanc
               </label>
               <label class="option">
-                <input type="radio" name="question1" value="3"> D. Pinot Gris
+                <input type="radio" name="question1" value="3"> D. Merlot
               </label>
             </div>
           </div>
         </div>
-        <div id="feedback-question1" class="red_feedback_card">   
+        <div id="feedback-question1" class="white_feedback_card">   
           <!-- wine info -->
           <div class="wine-intro">
             <div class="rating-container">
               <div class="wine-bottle">
-                <img src="./images/cabernet-sauvignon.png" alt="Bottle of Cabernet Sauvignon wine">
+                <img src="./images/gewurztraminer.png" alt="Bottle of Gewurztraminer wine">
               </div>
               <div class="ratings">
                 <div class="rating">
-                  <div class="rating-bar-background-r"></div>
-                  <div class="rating-bar-foreground-r" id="cabernet-sauvignon-sweetness"></div>
+                  <div class="rating-bar-background-w"></div>
+                  <div class="rating-bar-foreground-w" id="gewurztraminer-sweetness"></div>
                   <span>Sweetness</span>
                 </div>
                 <div class="rating">
-                  <div class="rating-bar-background-r"></div>
-                  <div class="rating-bar-foreground-r" id="cabernet-sauvignon-tannin"></div>
-                  <span>Tannin</span>
+                  <div class="rating-bar-background-w"></div>
+                  <div class="rating-bar-foreground-w" id="gewurztraminer-body"></div>
+                  <span>Body</span>
                 </div>
                 <div class="rating">
-                  <div class="rating-bar-background-r"></div>
-                  <div class="rating-bar-foreground-r" id="cabernet-sauvignon-acidity"></div>
+                  <div class="rating-bar-background-w"></div>
+                  <div class="rating-bar-foreground-w" id="gewurztraminer-acidity"></div>
                   <span>Acidity</span>
                 </div>
                 <div class="rating">
-                  <div class="rating-bar-background-r"></div>
-                  <div class="rating-bar-foreground-r" id="cabernet-sauvignon-alcohol"></div>
+                  <div class="rating-bar-background-w"></div>
+                  <div class="rating-bar-foreground-w" id="gewurztraminer-alcohol"></div>
                   <span>Alcohol Content</span>
                 </div>
               </div>
@@ -82,20 +82,264 @@
               <h3>Tastes</h3>
               <div class="features">
                 <div class="feature">
-                  <img src="./images/cedar.png" alt="Cedar">
-                  <p>Cedar</p>
+                  <img src="./images/rose.png" alt="Rose">
+                  <p>Rose</p>
                 </div>
                 <div class="feature">
-                  <img src="./images/black-currant.png" alt="Black Currant">
-                  <p>Black Currant</p>
+                  <img src="./images/lychee.png" alt="Lychee">
+                  <p>Lychee</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/ginger.png" alt="Ginger">
+                  <p>Ginger</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/grapefruit.png" alt="Grapefruit">
+                  <p>Grapefruit</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-container" id="origin">
+              <h3>Origin</h3>
+              <div class="features">
+                <div class="feature">
+                  <img src="./images/france.png" alt="France Flag">
+                  <p>France</p>
+                  <p>Alsace</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/australia.png" alt="New Zealand Flag">
+                  <p>New Zealand</p>
+                  <p>Gisborne</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/austria.png" alt="Austria Flag">
+                  <p>Austria</p>
+                  <p>Styria</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/italy.png" alt="Italy Flag">
+                  <p>Italy</p>
+                  <p>Trentino-Alto Adige</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-container">
+              <h3>Food Pairing</h3>
+              <div class="features">
+                <div class="feature">
+                  <img src="./images/thai_cuisine.png" alt="Thai Cuisine">
+                  <p>Thai Cuisine</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/indian_cuisine.png" alt="Indian Cuisine">
+                  <p>Indian Cuisine</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/smoked.png" alt="Smoked Meats">
+                  <p>Smoked Meats</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/dessert.png" alt="Dessert">
+                  <p>Dessert</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wine-text">
+            <h2>Time for a Hint!</h2>
+            <p>Revisit the wine's features: aroma, flavor, origin. Which one aligns with these hints?</p>
+          </div>
+        </div>
+        <div id="overlayQuiz-question1" class="overlay"></div>
+      </div>
+      <div class="quiz-container" id="question2">
+        <div class="quiz-question">
+          <p><span>Q2: </span>Which wine is known for its flavors of pineapple, cream, and vanilla, and is a good match for lobster?</p>
+          <div class="options">
+            <label class="option">
+              <input type="radio" name="question2" value="0"> A. Moscato
+            </label>
+            <label class="option">
+              <input type="radio" name="question2" value="1"> B. Pinot Noir
+            </label>
+            <label class="option">
+              <input type="radio" name="question2" value="2"> C. Chardonnay
+            </label>
+            <label class="option">
+              <input type="radio" name="question2" value="3"> D. Shiraz (Syrah)
+            </label>
+          </div>
+        </div>
+        <div id="feedback-question2" class="white_feedback_card">
+          <div class="wine-intro">
+            <div class="rating-container">
+              <div class="wine-bottle">
+                <img src="./images/chardonnay.png" alt="Bottle of Chardonnay wine">
+              </div>
+              <div class="ratings">
+                <div class="rating">
+                  <div class="rating-bar-background-w"></div>
+                  <div class="rating-bar-foreground-w" id="chardonnay-sweetness"></div>
+                  <span>Sweetness</span>
+                </div>
+                <div class="rating">
+                  <div class="rating-bar-background-w"></div>
+                  <div class="rating-bar-foreground-w" id="chardonnay-body"></div>
+                  <span>Body</span>
+                </div>
+                <div class="rating">
+                  <div class="rating-bar-background-w"></div>
+                  <div class="rating-bar-foreground-w" id="chardonnay-acidity"></div>
+                  <span>Acidity</span>
+                </div>
+                <div class="rating">
+                  <div class="rating-bar-background-w"></div>
+                  <div class="rating-bar-foreground-w" id="chardonnay-alcohol"></div>
+                  <span>Alcohol Content</span>
+                </div>
+              </div>
+            </div>
+            <div class="feature-container">
+              <h3>Tastes</h3>
+              <div class="features">
+                <div class="feature">
+                  <img src="./images/pineapple.png" alt="Pineapple">
+                  <p>Pineapple</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/yellow_apple.png" alt="Yellow Apple">
+                  <p>Yellow Apple</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/cream.png" alt="Cream">
+                  <p>Cream</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/vanilla.png" alt="Vanilla">
+                  <p>Vanilla</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-container" id="origin">
+              <h3>Origin</h3>
+              <div class="features">
+                <div class="feature">
+                  <img src="./images/france.png" alt="France Flag">
+                  <p>France</p>
+                  <p>Burgundy</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/chile.png" alt="Chile Flag">
+                  <p>Chile</p>
+                  <p>Central Valley</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/australia.png" alt="Australia Flag">
+                  <p>Australia</p>
+                  <p>Hunter Valley</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/usa.png" alt="USA Flag">
+                  <p>United States</p>
+                  <p>California</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-container">
+              <h3>Food Pairing</h3>
+              <div class="features">
+                <div class="feature">
+                  <img src="./images/lobster.png" alt="Lobster">
+                  <p>Lobster</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/spaghetti.png" alt="Spaghetti">
+                  <p>Spaghetti</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/shrimp.png" alt="Shrimp">
+                  <p>Shrimp</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/cheeses.png" alt="Cheeses">
+                  <p>Cheeses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wine-text">
+            <h2>Time for a Hint!</h2>
+            <p>Revisit the wine's features: aroma, flavor, origin. Which one aligns with these hints?</p>
+          </div>
+        </div>
+        <div id="overlayQuiz-question2" class="overlay"></div>
+      </div>
+      <div class="quiz-container" id="question3">
+        <div class="quiz-question">
+          <p><span>Q3: </span>For classic Italian lasagne dinner, which wine would be the ideal choice to complement the rich and savory flavors?</p>
+          <div class="options">
+            <label class="option">
+              <input type="radio" name="question3" value="0"> A. Sauvignon Blanc
+            </label>
+            <label class="option">
+              <input type="radio" name="question3" value="1"> B. Merlot
+            </label>
+            <label class="option">
+              <input type="radio" name="question3" value="2"> C. Chardonnay
+            </label>
+            <label class="option">
+              <input type="radio" name="question3" value="3"> D. Gewurztraminer
+            </label>
+          </div>
+        </div>
+        <div id="feedback-question3" class="red_feedback_card">
+          <div class="wine-intro">
+            <div class="rating-container">
+              <div class="wine-bottle">
+                <img src="./images/merlot.png" alt="Bottle of Merlot wine">
+              </div>
+              <div class="ratings">
+                <div class="rating">
+                  <div class="rating-bar-background-r"></div>
+                  <div class="rating-bar-foreground-r" id="merlot-sweetness"></div>
+                  <span>Sweetness</span>
+                </div>
+                <div class="rating">
+                  <div class="rating-bar-background-r"></div>
+                  <div class="rating-bar-foreground-r" id="merlot-tannin"></div>
+                  <span>Tannin</span>
+                </div>
+                <div class="rating">
+                  <div class="rating-bar-background-r"></div>
+                  <div class="rating-bar-foreground-r" id="merlot-acidity"></div>
+                  <span>Acidity</span>
+                </div>
+                <div class="rating">
+                  <div class="rating-bar-background-r"></div>
+                  <div class="rating-bar-foreground-r" id="merlot-alcohol"></div>
+                  <span>Alcohol Content</span>
+                </div>
+              </div>
+            </div>
+            <div class="feature-container">
+              <h3>Tastes</h3>
+              <div class="features">
+                <div class="feature">
+                  <img src="./images/vanilla.png" alt="Vanilla">
+                  <p>Vanilla</p>
                 </div>
                 <div class="feature">
                   <img src="./images/black-cherry.png" alt="Black Cherry">
                   <p>Black Cherry</p>
                 </div>
                 <div class="feature">
-                  <img src="./images/spices.png" alt="Baking Spices">
-                  <p>Baking Spices</p>
+                  <img src="./images/chocolate.png" alt="Chocolate">
+                  <p>Chocolate</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/black_plum.png" alt="Black Plum">
+                  <p>Black Plum</p>
                 </div>
               </div>
             </div>
@@ -108,19 +352,263 @@
                   <p>Bordeaux</p>
                 </div>
                 <div class="feature">
+                  <img src="./images/australia.png" alt="Australia Flag">
+                  <p>Australis</p>
+                  <p>Barossa Valley</p>
+                </div>
+                <div class="feature">
                   <img src="./images/usa.png" alt="USA Flag">
                   <p>United States</p>
                   <p>California</p>
                 </div>
                 <div class="feature">
-                  <img src="./images/chile.png" alt="Chile Flag">
-                  <p>Chile</p>
-                  <p>Colchagua</p>
+                  <img src="./images/italy.png" alt="Italy Flag">
+                  <p>Italy</p>
+                  <p>Tuscany</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-container">
+              <h3>Food Pairing</h3>
+              <div class="features">
+                <div class="feature">
+                  <img src="./images/roasted_vegateble.png" alt="Grilled Veggies">
+                  <p>Grilled Veggies</p>
                 </div>
                 <div class="feature">
-                  <img src="./images/argentina.png" alt="Argentina Flag">
-                  <p>Argentina</p>
-                  <p>Mendoza</p>
+                  <img src="./images/duck.png" alt="Duck">
+                  <p>Duck</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/turkey.png" alt="Turkey">
+                  <p>Turkey</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/beef.png" alt="Beef">
+                  <p>Beef</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wine-text">
+            <h2>Time for a Hint!</h2>
+            <p>Revisit the wine's features: aroma, flavor, origin. Which one aligns with these hints?</p>
+          </div>
+        </div>
+        <div id="overlayQuiz-question3" class="overlay"></div>
+      </div>
+      <div class="quiz-container" id="question4">
+        <div class="quiz-question">
+          <p><span>Q4: </span>Which wine would be the best choice to pair with a dessert of ice cream or a sweet pastry?</p>
+          <div class="options">
+            <label class="option">
+              <input type="radio" name="question4" value="0"> A. Sauvignon Blanc
+            </label>
+            <label class="option">
+              <input type="radio" name="question4" value="1"> B. Pinot Noir
+            </label>
+            <label class="option">
+              <input type="radio" name="question4" value="2"> C. Moscato
+            </label>
+            <label class="option">
+              <input type="radio" name="question4" value="3"> D. Cabernet Franc
+            </label>
+          </div>
+        </div>
+        <div id="feedback-question4" class="white_feedback_card">
+          <div class="wine-intro">
+            <div class="rating-container">
+              <div class="wine-bottle">
+                <img src="./images/moscato.png" alt="Bottle of Moscato wine">
+              </div>
+              <div class="ratings">
+                <div class="rating">
+                  <div class="rating-bar-background-w"></div>
+                  <div class="rating-bar-foreground-w" id="moscato-sweetness"></div>
+                  <span>Sweetness</span>
+                </div>
+                <div class="rating">
+                  <div class="rating-bar-background-w"></div>
+                  <div class="rating-bar-foreground-w" id="moscato-body"></div>
+                  <span>Body</span>
+                </div>
+                <div class="rating">
+                  <div class="rating-bar-background-w"></div>
+                  <div class="rating-bar-foreground-w" id="moscato-acidity"></div>
+                  <span>Acidity</span>
+                </div>
+                <div class="rating">
+                  <div class="rating-bar-background-w"></div>
+                  <div class="rating-bar-foreground-w" id="moscato-alcohol"></div>
+                  <span>Alcohol Content</span>
+                </div>
+              </div>
+            </div>
+            <div class="feature-container">
+              <h3>Tastes</h3>
+              <div class="features">
+                <div class="feature">
+                  <img src="./images/peach.png" alt="Peach">
+                  <p>Peach</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/orange_blossom.png" alt="Orange Blossom">
+                  <p>Orange Blossom</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/honey.png" alt="Honey">
+                  <p>Honey</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/honeydew.png" alt="Honeydew">
+                  <p>Honeydew</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-container" id="origin">
+              <h3>Origin</h3>
+              <div class="features">
+                <div class="feature">
+                  <img src="./images/italy.png" alt="Italy Flag">
+                  <p>Italy</p>
+                  <p>Piedmont</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/spain.png" alt="Spain Flag">
+                  <p>Spain</p>
+                  <p>Catalonia</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/usa.png" alt="USA Flag">
+                  <p>United States</p>
+                  <p>California</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/australia.png" alt="Australia Flag">
+                  <p>Australia</p>
+                  <p>Rutherglen</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-container">
+              <h3>Food Pairing</h3>
+              <div class="features">
+                <div class="feature">
+                  <img src="./images/ice_cream.png" alt="Ice Cream">
+                  <p>Ice Cream</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/bread.png" alt="Bread">
+                  <p>Bread</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/salad.png" alt="Salad">
+                  <p>Salad</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/dessert.png" alt="Dessert">
+                  <p>Dessert</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wine-text">
+            <h2>Time for a Hint!</h2>
+            <p>Revisit the wine's features: aroma, flavor, origin. Which one aligns with these hints?</p>
+          </div>
+        </div>
+        <div id="overlayQuiz-question4" class="overlay"></div>
+      </div>
+      <div class="quiz-container" id="question5">
+        <div class="quiz-question">
+          <p><span>Q5: </span>For a dish featuring smoked meats, which one of these wines would be the most suitable pairing?</p>
+          <div class="options">
+            <label class="option">
+              <input type="radio" name="question5" value="0"> A. Gewurztraminer
+            </label>
+            <label class="option">
+              <input type="radio" name="question5" value="1"> B. Cabernet Franc
+            </label>
+            <label class="option">
+              <input type="radio" name="question5" value="2"> C. Riesling
+            </label>
+            <label class="option">
+              <input type="radio" name="question5" value="3"> D. Shiraz (Syrah)
+            </label>
+          </div>
+        </div>
+        <div id="feedback-question5" class="red_feedback_card">
+          <div class="wine-intro">
+            <div class="rating-container">
+              <div class="wine-bottle">
+                <img src="./images/shiraz.png" alt="Bottle of Shiraz (Syrah) wine">
+              </div>
+              <div class="ratings">
+                <div class="rating">
+                  <div class="rating-bar-background-r"></div>
+                  <div class="rating-bar-foreground-r" id="shiraz-sweetness"></div>
+                  <span>Sweetness</span>
+                </div>
+                <div class="rating">
+                  <div class="rating-bar-background-r"></div>
+                  <div class="rating-bar-foreground-r" id="shiraz-tannin"></div>
+                  <span>Tannin</span>
+                </div>
+                <div class="rating">
+                  <div class="rating-bar-background-r"></div>
+                  <div class="rating-bar-foreground-r" id="shiraz-acidity"></div>
+                  <span>Acidity</span>
+                </div>
+                <div class="rating">
+                  <div class="rating-bar-background-r"></div>
+                  <div class="rating-bar-foreground-r" id="shiraz-alcohol"></div>
+                  <span>Alcohol Content</span>
+                </div>
+              </div>
+            </div>
+            <div class="feature-container">
+              <h3>Tastes</h3>
+              <div class="features">
+                <div class="feature">
+                  <img src="./images/truffle.png" alt="Truffle">
+                  <p>Truffle</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/violet.png" alt="Violet">
+                  <p>Violet</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/chocolate.png" alt="Chocolate">
+                  <p>Chocolate</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/black_pepper.png" alt="Black Pepper">
+                  <p>Black Pepper</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-container" id="origin">
+              <h3>Origin</h3>
+              <div class="features">
+                <div class="feature">
+                  <img src="./images/france.png" alt="France Flag">
+                  <p>France</p>
+                  <p>Rhone Valley</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/spain.png" alt="Spain Flag">
+                  <p>Spain</p>
+                  <p>Priorat</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/australia.png" alt="Australia Flag">
+                  <p>Australis</p>
+                  <p>Barossa Valley</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/s_africa.png" alt="South Africa Flag">
+                  <p>South Africa</p>
+                  <p>Stellenbosch</p>
                 </div>
               </div>
             </div>
@@ -140,118 +628,21 @@
                   <p>Smoked Meats</p>
                 </div>
                 <div class="feature">
-                  <img src="./images/cheeses.png" alt="Cheeses">
-                  <p>Cheeses</p>
+                  <img src="./images/bbq_pork.png" alt="Barbecue Pork">
+                  <p>Barbecue Pork</p>
                 </div>
               </div>
             </div>
-            <!-- <div class="feature-container">
-              <div class="description">
-                <p>Cabernet Sauvignon is a full-bodied red grape first heavily planted in the Bordeaux region. Wines are full-bodied with bold tannins and a long persistent finish driven mostly by the higher levels of alcohol and tannin that often accompany these wines.</p>
-              </div>
-            </div> -->
           </div>
           <div class="wine-text">
-            <h2>Cabernet Sauvignon</h2>
-            <p>The most popular wine variety in the world</p>
+            <h2>Time for a Hint!</h2>
+            <p>Revisit the wine's features: aroma, flavor, origin. Which one aligns with these hints?</p>
           </div>
-        </div>
-        <div id="overlayQuiz-question1" class="overlay"></div>
-      </div>
-      <div class="quiz-container" id="question2">
-        <div class="quiz-question">
-          <p><span>Q2: </span> With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
-          <div class="options">
-            <label class="option">
-              <input type="radio" name="question2" value="0"> A. Cabernet Sauvignon
-            </label>
-            <label class="option">
-              <input type="radio" name="question2" value="1"> B. Cabernet Franc
-            </label>
-            <label class="option">
-              <input type="radio" name="question2" value="2"> C. Riesling
-            </label>
-            <label class="option">
-              <input type="radio" name="question2" value="3"> D. Pinot Gris
-            </label>
-          </div>
-        </div>
-        <div id="feedback-question2" class="red_feedback_card">
-          <p>Incorrect. Please try again.</p>
-        </div>
-        <div id="overlayQuiz-question2" class="overlay"></div>
-      </div>
-      <div class="quiz-container" id="question3">
-        <div class="quiz-question">
-          <p><span>Q3:</span>&nbsp With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
-          <div class="options">
-            <label class="option">
-              <input type="radio" name="question3" value="0"> A. Cabernet Sauvignon
-            </label>
-            <label class="option">
-              <input type="radio" name="question3" value="1"> B. Cabernet Franc
-            </label>
-            <label class="option">
-              <input type="radio" name="question3" value="2"> C. Riesling
-            </label>
-            <label class="option">
-              <input type="radio" name="question3" value="3"> D. Pinot Gris
-            </label>
-          </div>
-        </div>
-        <div id="feedback-question3" class="red_feedback_card">
-          <p>Incorrect. Please try again.</p>
-        </div>
-        <div id="overlayQuiz-question3" class="overlay"></div>
-      </div>
-      <div class="quiz-container" id="question4">
-        <div class="quiz-question">
-          <p><span>Q4:</span>&nbsp With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
-          <div class="options">
-            <label class="option">
-              <input type="radio" name="question4" value="0"> A. Cabernet Sauvignon
-            </label>
-            <label class="option">
-              <input type="radio" name="question4" value="1"> B. Cabernet Franc
-            </label>
-            <label class="option">
-              <input type="radio" name="question4" value="2"> C. Riesling
-            </label>
-            <label class="option">
-              <input type="radio" name="question4" value="3"> D. Pinot Gris
-            </label>
-          </div>
-        </div>
-        <div id="feedback-question4" class="red_feedback_card">
-          <p>Incorrect. Please try again.</p>
-        </div>
-        <div id="overlayQuiz-question4" class="overlay"></div>
-      </div>
-      <div class="quiz-container" id="question5">
-        <div class="quiz-question">
-          <p><span>Q5:</span>&nbsp With cheese and steak for dinner, which bottle of wine should I pick to go with it?</p>
-          <div class="options">
-            <label class="option">
-              <input type="radio" name="question5" value="0"> A. Cabernet Sauvignon
-            </label>
-            <label class="option">
-              <input type="radio" name="question5" value="1"> B. Cabernet Franc
-            </label>
-            <label class="option">
-              <input type="radio" name="question5" value="2"> C. Riesling
-            </label>
-            <label class="option">
-              <input type="radio" name="question5" value="3"> D. Pinot Gris
-            </label>
-          </div>
-        </div>
-        <div id="feedback-question5" class="red_feedback_card">
-          <p>Incorrect. Please try again.</p>
         </div>
         <div id="overlayQuiz-question5" class="overlay"></div>
       </div>
   
-      <div class="pagination">
+      <div class="pagination" id="quiz-pagination">
         <button id="button1">1</button>
         <button id="button2">2</button>
         <button id="button3">3</button>
@@ -260,6 +651,14 @@
       </div>
       
       <button id="submitAnswers">Submit</button>
+
+      <div class="overlay" id="alertCard-overlay"></div>
+      <div id="alertCard">
+        <div>
+          <h2>Incorrect</h2>
+          <p>Some answers are incorrect or incomplete, please check your answers. You need to <strong>answer all 5 questions correctly</strong> to complete the quiz.</p>
+        </div>
+      </div>
 
 
     </main>

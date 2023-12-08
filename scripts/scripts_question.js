@@ -81,6 +81,11 @@ function closeFeedback(questionNumber) {
 const submitButton = document.getElementById('submitAnswers');
 submitButton.addEventListener('click', checkAnswersAndOpenPage);
 
+function showAlertCard() {
+  document.getElementById('alertCard-overlay').style.display = 'block';
+  document.getElementById('alertCard').style.display = 'block';
+}
+
 function checkAnswersAndOpenPage() {
   let allCorrect = true;
   for (let question in correctAnswers) {
@@ -94,6 +99,13 @@ function checkAnswersAndOpenPage() {
   if (allCorrect) {
     window.location.href = 'completion.html';
   } else {
-    alert("Some answers are incorrect, please check your answers.");
+    showAlertCard();
   }
+}
+
+document.getElementById('alertCard-overlay').addEventListener('click', closeAlertCard);
+
+function closeAlertCard() {
+  document.getElementById('alertCard-overlay').style.display = 'none';
+  document.getElementById('alertCard').style.display = 'none';
 }

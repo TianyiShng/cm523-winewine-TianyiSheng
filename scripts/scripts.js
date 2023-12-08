@@ -1,13 +1,11 @@
 /* WRITE YOUR JS HERE... YOU MAY REQUIRE MORE THAN ONE JS FILE. IF SO SAVE IT SEPARATELY IN THE SCRIPTS DIRECTORY */
 
 
-//const menuIcon = document.getElementById('menu-icon');
 const menuIcon = document.getElementById('winesMenu');
 const menuCard = document.getElementById('menu-card');
 const overlay = document.getElementById('overlay');
   
 // open mene
-//menuIcon.addEventListener('click', function() {
 winesMenu.addEventListener('click', function() {
   overlay.style.display = 'block';
   menuCard.style.display = 'block';
@@ -68,10 +66,14 @@ document.getElementById('startQuizBtn').addEventListener('click', function() {
 document.getElementById('redBtn').addEventListener('click', function() {
   document.getElementById('red-wines').style.display = 'flex'; 
   document.getElementById('white-wines').style.display = 'none'; 
+  document.getElementById('red-wines').scrollIntoView({ behavior: 'smooth' });
 });
 
 document.getElementById('whiteBtn').addEventListener('click', function() {
   document.getElementById('red-wines').style.display = 'none'; 
   document.getElementById('white-wines').style.display = 'flex'; 
+  document.getElementById('white-wines').scrollIntoView({ behavior: 'smooth' });
 });
+
+
 
