@@ -706,7 +706,7 @@ button#startQuizBtn:hover, button#submitAnswers:hover {
 
 .red_feedback_card, .white_feedback_card {
     width: 360px; 
-    height: 620px;
+    height: 630px;
     /*height:710px; */
     position: fixed;
     top: 50%;
@@ -814,4 +814,37 @@ button#submitAnswers {
     margin-bottom: 8px;
     color:#D64648;
     font-weight: bold;
+}
+
+.closeFeedback, #closeAlert {
+    background: none;
+    border: none; 
+    padding: 0;
+    cursor: pointer; 
+}
+
+.closeFeedback img, #closeAlert img {
+    display: block;
+    width: 16px;
+    height: auto;
+}
+
+.closeFeedback img {
+    position: fixed; 
+    right: 0;
+    top: 0; 
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.red_feedback_card .rating-container, .white_feedback_card .rating-container {
+    margin-top: 0px;
+}
+
+#closeAlert {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 10px;
 }

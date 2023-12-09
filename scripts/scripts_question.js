@@ -71,6 +71,15 @@ let overlays = document.getElementsByClassName('overlay');
     });
   });
 
+let closeBtns = document.getElementsByClassName('closeFeedback');
+  Array.from(closeBtns).forEach(function(closeBtn) {
+    closeBtn.addEventListener('click', function() {
+      let questionNumber = this.id.replace('closeFeedback-', '');
+      closeFeedback(questionNumber);
+    });
+  });
+
+
 function closeFeedback(questionNumber) {
   document.getElementById('overlayQuiz-' + questionNumber).style.display = 'none';
   document.getElementById('feedback-' + questionNumber).style.display = 'none';
@@ -104,6 +113,7 @@ function checkAnswersAndOpenPage() {
 }
 
 document.getElementById('alertCard-overlay').addEventListener('click', closeAlertCard);
+document.getElementById('closeAlert').addEventListener('click', closeAlertCard);
 
 function closeAlertCard() {
   document.getElementById('alertCard-overlay').style.display = 'none';
