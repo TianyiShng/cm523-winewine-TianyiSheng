@@ -19,13 +19,12 @@ function closeMenu() {
 
 overlay.addEventListener('click', closeMenu);
 
-// 遍历所有的菜单项
 document.querySelectorAll('#menu-card a').forEach(function(link) {
   link.addEventListener('click', function(event) {
-    event.preventDefault(); // 阻止默认的锚点跳转行为
-    let targetId = this.getAttribute('href'); // 获取锚点的href属性，即目标id
+    event.preventDefault(); // prevent the link event
+    let targetId = this.getAttribute('href'); // get the id
 
-    // 根据href的值判断是红葡萄酒还是白葡萄酒
+    // red or white
     if (targetId.startsWith("#white-")) {
       document.getElementById('white-wines').style.display = 'flex'; 
       document.getElementById('red-wines').style.display = 'none'; 
@@ -36,7 +35,7 @@ document.querySelectorAll('#menu-card a').forEach(function(link) {
 
     closeMenu();
       
-    window.location.hash = targetId;
+    location.hash = targetId;
 
   });
 });

@@ -55,18 +55,18 @@ header .container {
     top: 50%;
     transform: translateY(-50%);
     margin: 24px 24px 24px 80px;
-    max-width: 640px;
+    max-width: 740px;
     box-sizing: border-box; 
     background-color: rgb(250,247,242,0.8);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     header .container {
         left: 0px;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     header .container {
         margin: 24px;
     }
@@ -79,7 +79,6 @@ header .container p {
 
 header .container p:first-child {
     margin-top: 32px;
-    /*font-family: 'Oleo Script', cursive;*/
 }
 
 h2 {
@@ -100,11 +99,11 @@ header .container h2 {
     gap: 2px;
 }
 
-.files a {
+#web_intro a {
     color: black;
 }
 
-.files a:hover {
+#web_intro a:hover {
     color: #AE2121;
 }
 
@@ -113,39 +112,11 @@ header .container h2 {
     margin-right: 18px;
 }
 
-@media (max-width: 470px) {
-    #web_intro p:nth-child(1) {
-        display: none;
-    }
-    #web_intro p:nth-child(2) {
-        margin-top: 32px;
-        margin-bottom: 24px;
-    }
-    #web_intro p:nth-child(3) {
-        display: none;
-    }
-    header .container p, .files li {
-        font-size: 16px;
-    }
-    header .container h2 {
-        font-size: 22px;
-        margin-top: 0px;
-    }
-    .files{
-        margin-bottom: 12px;
-    }
-    .container ul:last-child {
-        margin-bottom: 32px;
-    }
-}
-
 #scroll {
-    font-size: 1.25em;
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     position: absolute; 
-    left: 50%; 
-    transform: translateX(-50%); 
     bottom: 0px; 
     text-align: center; 
 }
@@ -157,9 +128,60 @@ header .container h2 {
 }
 
 #scroll img {
-    width: 30px;
+    width: 24px;
     height: 100%;
-    margin-top: 8px;
+    margin-top: 0;
+}
+
+@media (max-width: 680px) {
+    #web_intro p:nth-child(1) {
+        display: none;
+    }
+    #web_intro p:nth-child(2) {
+        margin-top: 32px;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 630px) {
+    #web_intro p:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 564px) {
+    header .container p, .files li {
+        font-size: 16px;
+    }
+    header .container h2 {
+        font-size: 22px;
+        margin-top: 0px;
+    }
+    #web_intro p:nth-child(2) {
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+    .files{
+        margin-bottom: 12px;
+    }
+    .container ul:last-child {
+        margin-bottom: 24px;
+    }
+    #scroll {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 440px) {
+    .files {
+        gap: 0px;
+    }
+    .files li {
+        font-size: 14px;
+    }
+    header .container h2 {
+        font-size: 18px;
+    }
 }
 
 nav {
@@ -557,14 +579,6 @@ h3 {
     text-decoration: underline;
 }
 
-/*#redBtn:active {
-    color: #AE2121;
-}
-
-#whiteBtn:active {
-    color: #F0C117;
-}*/
-
 footer {
     display: flex;
     justify-content: center; 
@@ -645,7 +659,6 @@ button#startQuizBtn:hover, button#submitAnswers:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*height: vh;*/
 }
 
 .quiz-question {
@@ -707,7 +720,6 @@ button#startQuizBtn:hover, button#submitAnswers:hover {
 .red_feedback_card, .white_feedback_card {
     width: 360px; 
     height: 630px;
-    /*height:710px; */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -762,7 +774,6 @@ button#submitAnswers {
 }
  
 .completion-text-container {
-
     max-width: 600px;
     margin: 24px;
 }
@@ -777,10 +788,20 @@ button#submitAnswers {
         flex-wrap: wrap;
     }
     .completion-text-container {
-        flex: 1 1 auto;
         max-width: 400px;
         margin-top: 0;
-        text-align: center; /*may change*/
+        text-align: center;
+    } 
+    .trophy-container {
+        margin-right: 0px; 
+    }
+}
+
+@media (max-width: 448px) {
+    .completion-text-container {
+        max-width: 342px;
+        margin-top: 0;
+        text-align: center;
     } 
 }
 
@@ -791,8 +812,6 @@ button#submitAnswers {
     left: 50%;
     transform: translate(-50%, -50%);
     background: #FFF9F9;
-    /*border: 2px solid #D64648;*/
-    /*border-radius: 8px;*/
     padding: 12px 8px;
     z-index: 1001;
     max-width: 460px;
