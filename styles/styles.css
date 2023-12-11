@@ -179,8 +179,20 @@ header .container h2 {
     .files li {
         font-size: 14px;
     }
+    #web_intro p:nth-child(2) {
+        margin-top: 16px;
+    }
     header .container h2 {
         font-size: 18px;
+    }
+    header .container p {
+        margin: 12px;
+    }
+    header .container h2 {
+        margin: 16px 12px 0px 12px;
+    }
+    .files {
+        margin: 0px 12px 16px 12px;
     }
 }
 
